@@ -24,7 +24,15 @@ public static class Models
         public bool viewXInverted;
         public bool viewYInverted;
 
-        [Header("Movement")]
+        [Header("Movement Settings")]
+        public bool sprintingHold;
+        public float movementSmoothing;
+
+        [Header("Movement - Running")]
+        public float runningForwardSpeed;
+        public float runningStrafeSpeed;
+
+        [Header("Movement - Walking")]
         public float walkingForwardSpeed;
         public float walkingBackwardSpeed;
         public float walkingStrafeSpeed;
@@ -32,6 +40,13 @@ public static class Models
         [Header("Jumping")]
         public float jumpingHeight;
         public float jumpingFalloff;
+        public float fallingSmoothing;
+
+        [Header("Speed Effectors")]
+        public float speedEffector = 1;
+        public float coruchSpeedEffector;
+        public float proneSpeedEffector;
+        public float fallingSpeedEffector;
     }
 
     [Serializable]
@@ -39,6 +54,23 @@ public static class Models
     {
         public float cameraHeight;
         public CapsuleCollider stanceCollider;
+    }
+
+    #endregion
+
+    #region - Weapon -
+
+    [Serializable]
+    public class WeaponSettingModel
+    {
+        [Header("Sway")]
+        public float swayAmount;
+        public bool swayXInverted;
+        public bool swayYInverted;
+        public float swaySmoothing;
+        public float swayResetSmoothing;
+        public float swayClampX;
+        public float swayClampY;
     }
 
     #endregion

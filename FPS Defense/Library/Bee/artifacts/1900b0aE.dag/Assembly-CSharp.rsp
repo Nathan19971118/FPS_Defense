@@ -364,7 +364,8 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.29f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Inputs/Default Input.cs"
 "Assets/Scripts/Models.cs"
-"Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/Player/PlayerController.cs"
+"Assets/Scripts/Weapons/WeaponController.cs"
 -langversion:9.0
 /deterministic
 /optimize+
