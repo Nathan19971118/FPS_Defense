@@ -67,6 +67,12 @@ public static class Models
 
     #region - Weapon -
 
+    public enum WeaponFireType
+    {
+        SemiAuto,
+        FullyAuto
+    }
+
     [Serializable]
     public class WeaponSettingModel
     {

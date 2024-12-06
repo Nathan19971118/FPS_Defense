@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("References")]
     public Transform cameraHolder;
+    public Transform _camera;
     public Transform feetTransform;
 
     [Header("Settings")]
@@ -90,16 +91,19 @@ public class PlayerController : MonoBehaviour
         defaultInput.Player.Sprint.performed += e => ToggleSprint();
         defaultInput.Player.SprintReleased.performed += e => StopSprint();
 
-        // Weapon input
-        defaultInput.Weapon.Fire2Pressed.performed += e => AimingInPressed();
-        defaultInput.Weapon.Fire2Released.performed += e => AimingInReleased();
-
         // Lean
         defaultInput.Player.LeanRightPressed.performed += e => isLeaningRight = true;
         defaultInput.Player.LeanRightReleased.performed += e => isLeaningRight = false;
 
         defaultInput.Player.LeanLeftPressed.performed += e => isLeaningLeft = true;
         defaultInput.Player.LeanLeftReleased.performed += e => isLeaningLeft = false;
+
+        // Weapon input
+        defaultInput.Weapon.Fire2Pressed.performed += e => AimingInPressed();
+        defaultInput.Weapon.Fire2Released.performed += e => AimingInReleased();
+
+        defaultInput.Weapon.Fire1Pressed.performed += e => ShootingPressed();
+        defaultInput.Weapon.Fire1Released.performed += e => ShootingReleased();
 
         defaultInput.Enable();
 
@@ -133,6 +137,27 @@ public class PlayerController : MonoBehaviour
     }
 
     #endregion
+
+    #region - Shooting -
+
+    private void ShootingPressed()
+    {
+        if (currentWeapon)
+        {
+            currentWeapon.isShooting = true;
+        }
+    }
+
+    private void ShootingReleased()
+    {
+        if (currentWeapon)
+        {
+            currentWeapon.isShooting = false;
+        }
+    }
+
+    #endregion
+
 
     #region - Aiming In -
 
