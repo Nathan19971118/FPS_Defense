@@ -21,6 +21,8 @@ public static class Models
         public float viewXSensitivity;
         public float viewYSensitivity;
 
+        public float aimingSensitivityEffector;
+
         public bool viewXInverted;
         public bool viewYInverted;
 
@@ -47,6 +49,7 @@ public static class Models
         public float coruchSpeedEffector;
         public float proneSpeedEffector;
         public float fallingSpeedEffector;
+        public float aimingSpeedEffector;
 
         [Header("Is Grounded / Falling")]
         public float isGroundedRadius;

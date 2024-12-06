@@ -67,6 +67,42 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "LeanLeftPressed",
+                    "type": "Button",
+                    "id": "bfffc18a-2d97-4f03-8c9a-6f2277480687",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeanRightPressed",
+                    "type": "Button",
+                    "id": "9f8ac1d0-6bcc-4256-b1dc-9f97da0ad42e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeanLeftReleased",
+                    "type": "Button",
+                    "id": "82876309-b3e5-42d0-a231-f094fe0c7d3a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeanRightReleased",
+                    "type": "Button",
+                    "id": "904c2926-d83e-4354-a0a0-4537cd832eed",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -199,6 +235,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "SprintReleased",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5cd1be20-d05f-4879-a65d-1f19b203bd9f",
+                    "path": "<Keyboard>/q",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeanLeftPressed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "71525b2d-d05d-4adb-a40d-aa7c461f883c",
+                    "path": "<Keyboard>/e",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeanRightPressed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1f6d4fff-5be3-40f1-9534-76691812b49b",
+                    "path": "<Keyboard>/q",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeanLeftReleased",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a3a4dc36-11b1-4d83-9382-dab4135c9271",
+                    "path": "<Keyboard>/e",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeanRightReleased",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

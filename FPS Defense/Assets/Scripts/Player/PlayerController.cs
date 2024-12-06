@@ -61,6 +61,17 @@ public class PlayerController : MonoBehaviour
     [HideInInspector]
     public bool isFalling;
 
+    [Header("Leaning")]
+    public Transform leanPivot;
+    private float currentLean; // Actual value of the lean
+    private float targetLean;
+    public float leanAngle;
+    public float leanSmoothing;
+    private float leanVelocity;
+
+    private bool isLeaningLeft;
+    private bool isLeaningRight;
+
     [Header("Aiming In")]
     public bool isAimingIn;
 
@@ -82,6 +93,13 @@ public class PlayerController : MonoBehaviour
         // Weapon input
         defaultInput.Weapon.Fire2Pressed.performed += e => AimingInPressed();
         defaultInput.Weapon.Fire2Released.performed += e => AimingInReleased();
+
+        // Lean
+        defaultInput.Player.LeanRightPressed.performed += e => isLeaningRight = true;
+        defaultInput.Player.LeanRightReleased.performed += e => isLeaningRight = false;
+
+        defaultInput.Player.LeanLeftPressed.performed += e => isLeaningLeft = true;
+        defaultInput.Player.LeanLeftReleased.performed += e => isLeaningLeft = false;
 
         defaultInput.Enable();
 
@@ -110,6 +128,7 @@ public class PlayerController : MonoBehaviour
         CalculateMovement();
         CalculateJump();
         CalculateStance();
+        CalculateLeaning();
         CalculateAimingIn();
     }
 
@@ -154,14 +173,14 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
-    #region - View / Movement
+    #region - View / Movement -
 
     private void CalculateView()
     {
-        newPlayerRotation.y += playerSettings.viewXSensitivity * (playerSettings.viewXInverted ? -inputView.x : inputView.x) * Time.deltaTime;
+        newPlayerRotation.y += (isAimingIn ? playerSettings.viewXSensitivity * playerSettings.aimingSensitivityEffector : playerSettings.viewXSensitivity) * (playerSettings.viewXInverted ? -inputView.x : inputView.x) * Time.deltaTime;
         transform.localRotation = Quaternion.Euler(newPlayerRotation);
 
-        newCameraRotation.x += playerSettings.viewYSensitivity * (playerSettings.viewYInverted ? inputView.y : -inputView.y) * Time.deltaTime;
+        newCameraRotation.x += (isAimingIn ? playerSettings.viewYSensitivity * playerSettings.aimingSensitivityEffector : playerSettings.viewXSensitivity) * (playerSettings.viewYInverted ? inputView.y : -inputView.y) * Time.deltaTime;
         newCameraRotation.x = Mathf.Clamp(newCameraRotation.x, viewClampYMin, viewClampYMax);
 
         cameraHolder.localRotation = Quaternion.Euler(newCameraRotation);
@@ -195,6 +214,10 @@ public class PlayerController : MonoBehaviour
         else if (playerStance == PlayerStance.Prone)
         {
             playerSettings.speedEffector = playerSettings.proneSpeedEffector;
+        }
+        else if (isAimingIn)
+        {
+            playerSettings.speedEffector = playerSettings.aimingSpeedEffector;
         }
         else
         {
@@ -230,6 +253,30 @@ public class PlayerController : MonoBehaviour
         movementSpeed += jumpingForce * Time.deltaTime;
 
         characterController.Move(movementSpeed);
+    }
+
+    #endregion
+
+    #region - Leaning -
+
+    private void CalculateLeaning()
+    {
+        if (isLeaningLeft)
+        {
+            targetLean = leanAngle;
+        }
+        else if (isLeaningRight)
+        {
+            targetLean = -leanAngle;
+        }
+        else
+        {
+            targetLean = 0;
+        }
+
+        currentLean = Mathf.SmoothDamp(currentLean, targetLean, ref leanVelocity, leanSmoothing);
+
+        leanPivot.localRotation = Quaternion.Euler(new Vector3(0, 0, currentLean));
     }
 
     #endregion
