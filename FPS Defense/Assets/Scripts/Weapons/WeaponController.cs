@@ -13,6 +13,7 @@ public class WeaponController : MonoBehaviour
     public Animator weaponAnimator;
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
+    public TrailRenderer trailEffect;
 
     [Header("Settings")]
     public WeaponSettingModel settings;
@@ -61,8 +62,13 @@ public class WeaponController : MonoBehaviour
     private float currentFireRate;
     public List<WeaponFireType> allowedFireTypes;
     public WeaponFireType currentFireType;
+    public float bulletVelocity = 10f;
     [HideInInspector]
     public bool isShooting;
+
+    // Bullet test
+    private RaycastHit rayHit;
+    private int layerMask;
 
     #region - Start / Update -
 
@@ -71,6 +77,8 @@ public class WeaponController : MonoBehaviour
         newWeaponRotation = transform.localRotation.eulerAngles;
 
         currentFireType = allowedFireTypes.First();
+
+        layerMask = 1 << 7;
     }
 
     private void Update()
@@ -95,20 +103,40 @@ public class WeaponController : MonoBehaviour
     {
         if (isShooting)
         {
-            Shoot();
+            StartCoroutine("Shoot");
 
             if (currentFireType == WeaponFireType.SemiAuto)
             {
                 isShooting = false;
             }
+            else if(currentFireType == WeaponFireType.FullyAuto)
+            {
+
+            }
+        }
+        else
+        {
+            // Ray test
+            if (Physics.Raycast(bulletSpawn.transform.position, transform.forward, out rayHit, Mathf.Infinity, layerMask))
+            {
+                Debug.Log("Hit Green" + rayHit.collider.gameObject.name);
+                Debug.DrawRay(bulletSpawn.transform.position, transform.forward * rayHit.distance, Color.red);
+            }
+            else
+            {
+                Debug.DrawRay(bulletSpawn.transform.position, transform.forward * 1000f, Color.red);
+            }
         }
     }
 
-    private void Shoot()
+    IEnumerator Shoot()
     {
-        var bullet = Instantiate(bulletPrefab, bulletSpawn);
+        // Fire Bullet
+        GameObject instantBullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+        Rigidbody bulletRigid = instantBullet.GetComponent<Rigidbody>();
+        bulletRigid.velocity = bulletSpawn.forward * bulletVelocity;
 
-        // Load Bullet Settings
+        yield return null;
     }
 
     #endregion
