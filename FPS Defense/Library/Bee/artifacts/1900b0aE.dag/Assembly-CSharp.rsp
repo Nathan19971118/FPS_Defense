@@ -367,6 +367,7 @@
 "Assets/Scripts/Models.cs"
 "Assets/Scripts/Player/PlayerController.cs"
 "Assets/Scripts/Weapons/Bullet.cs"
+"Assets/Scripts/Weapons/Grenade.cs"
 "Assets/Scripts/Weapons/WeaponController.cs"
 -langversion:9.0
 /deterministic

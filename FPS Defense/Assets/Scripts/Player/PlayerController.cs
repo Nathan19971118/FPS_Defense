@@ -80,32 +80,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        defaultInput = new DefaultInput();
-
-        // Player input
-        defaultInput.Player.Movement.performed += e => inputMovement = e.ReadValue<Vector2>();
-        defaultInput.Player.View.performed += e => inputView = e.ReadValue<Vector2>();
-        defaultInput.Player.Jump.performed += e => Jump();
-        defaultInput.Player.Crouch.performed += e => Crouch();
-        defaultInput.Player.Prone.performed += e => Prone();
-        defaultInput.Player.Sprint.performed += e => ToggleSprint();
-        defaultInput.Player.SprintReleased.performed += e => StopSprint();
-
-        // Lean
-        defaultInput.Player.LeanRightPressed.performed += e => isLeaningRight = true;
-        defaultInput.Player.LeanRightReleased.performed += e => isLeaningRight = false;
-
-        defaultInput.Player.LeanLeftPressed.performed += e => isLeaningLeft = true;
-        defaultInput.Player.LeanLeftReleased.performed += e => isLeaningLeft = false;
-
-        // Weapon input
-        defaultInput.Weapon.Fire2Pressed.performed += e => AimingInPressed();
-        defaultInput.Weapon.Fire2Released.performed += e => AimingInReleased();
-
-        defaultInput.Weapon.Fire1Pressed.performed += e => ShootingPressed();
-        defaultInput.Weapon.Fire1Released.performed += e => ShootingReleased();
-
-        defaultInput.Enable();
+        InputSystem();
 
         newCameraRotation = cameraHolder.localRotation.eulerAngles;
         newPlayerRotation = transform.localRotation.eulerAngles;
@@ -158,6 +133,41 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
+    #region - Input -
+
+    void InputSystem()
+    {
+        defaultInput = new DefaultInput();
+
+        // Player input
+        defaultInput.Player.Movement.performed += e => inputMovement = e.ReadValue<Vector2>();
+        defaultInput.Player.View.performed += e => inputView = e.ReadValue<Vector2>();
+        defaultInput.Player.Jump.performed += e => Jump();
+        defaultInput.Player.Crouch.performed += e => Crouch();
+        defaultInput.Player.Prone.performed += e => Prone();
+        defaultInput.Player.Sprint.performed += e => ToggleSprint();
+        defaultInput.Player.SprintReleased.performed += e => StopSprint();
+
+        // Lean
+        defaultInput.Player.LeanRightPressed.performed += e => isLeaningRight = true;
+        defaultInput.Player.LeanRightReleased.performed += e => isLeaningRight = false;
+
+        defaultInput.Player.LeanLeftPressed.performed += e => isLeaningLeft = true;
+        defaultInput.Player.LeanLeftReleased.performed += e => isLeaningLeft = false;
+
+        // Weapon input
+        defaultInput.Weapon.Fire2Pressed.performed += e => AimingInPressed();
+        defaultInput.Weapon.Fire2Released.performed += e => AimingInReleased();
+
+        defaultInput.Weapon.Fire1Pressed.performed += e => ShootingPressed();
+        defaultInput.Weapon.Fire1Released.performed += e => ShootingReleased();
+
+        defaultInput.Weapon.FireModeSwitch.performed += e => currentWeapon.CycleFireType();
+
+        defaultInput.Enable();
+    }
+
+    #endregion
 
     #region - Aiming In -
 

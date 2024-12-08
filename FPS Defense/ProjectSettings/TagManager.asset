@@ -15,11 +15,11 @@ TagManager:
   - Water
   - UI
   - 
-  - Green
-  - Blue
-  - 
+  - Enemy
+  - EnemyDead
+  - Grenade
   - Player
-  - 
+  - Floor
   - 
   - 
   - 

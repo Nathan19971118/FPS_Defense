@@ -12,7 +12,9 @@ public class WeaponController : MonoBehaviour
     [Header("References")]
     public Animator weaponAnimator;
     public GameObject bulletPrefab;
+    public GameObject grenadePrefab;
     public Transform bulletSpawn;
+    public Transform grenadeSpawn;
     public TrailRenderer trailEffect;
 
     [Header("Settings")]
@@ -61,14 +63,11 @@ public class WeaponController : MonoBehaviour
     public float rateOfFire;
     private float currentFireRate;
     public List<WeaponFireType> allowedFireTypes;
-    public WeaponFireType currentFireType;
+    public WeaponFireType currentFireType; // Fire Mode
     public float bulletVelocity = 10f;
+    public float grenadeVelocity = 10f;
     [HideInInspector]
     public bool isShooting;
-
-    // Bullet test
-    private RaycastHit rayHit;
-    private int layerMask;
 
     #region - Start / Update -
 
@@ -77,8 +76,6 @@ public class WeaponController : MonoBehaviour
         newWeaponRotation = transform.localRotation.eulerAngles;
 
         currentFireType = allowedFireTypes.First();
-
-        layerMask = 1 << 7;
     }
 
     private void Update()
@@ -104,37 +101,73 @@ public class WeaponController : MonoBehaviour
         if (isShooting)
         {
             StartCoroutine("Shoot");
-
-            if (currentFireType == WeaponFireType.SemiAuto)
-            {
-                isShooting = false;
-            }
-            else if(currentFireType == WeaponFireType.FullyAuto)
-            {
-
-            }
         }
-        else
-        {
-            // Ray test
-            if (Physics.Raycast(bulletSpawn.transform.position, transform.forward, out rayHit, Mathf.Infinity, layerMask))
-            {
-                Debug.Log("Hit Green" + rayHit.collider.gameObject.name);
-                Debug.DrawRay(bulletSpawn.transform.position, transform.forward * rayHit.distance, Color.red);
-            }
-            else
-            {
-                Debug.DrawRay(bulletSpawn.transform.position, transform.forward * 1000f, Color.red);
-            }
-        }
+    }
+
+    public void CycleFireType()
+    {
+        int currentIndex = allowedFireTypes.IndexOf(currentFireType);
+
+        currentIndex = (currentIndex + 1) % allowedFireTypes.Count;
+
+        currentFireType=allowedFireTypes[currentIndex];
     }
 
     IEnumerator Shoot()
     {
-        // Fire Bullet
-        GameObject instantBullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
-        Rigidbody bulletRigid = instantBullet.GetComponent<Rigidbody>();
-        bulletRigid.velocity = bulletSpawn.forward * bulletVelocity;
+        if (currentFireType == WeaponFireType.SemiAuto)
+        {
+            isShooting = false;
+            // Fire Bullet
+            GameObject instantBullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+            Rigidbody bulletRigid = instantBullet.GetComponent<Rigidbody>();
+            bulletRigid.velocity = bulletSpawn.forward * bulletVelocity;
+
+            StartCoroutine(FireRateHandler());
+        }
+        if (currentFireType == WeaponFireType.FullyAuto)
+        {
+            // Fire Bullet
+            GameObject instantBullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+            Rigidbody bulletRigid = instantBullet.GetComponent<Rigidbody>();
+            bulletRigid.velocity = bulletSpawn.forward * bulletVelocity;
+
+            StartCoroutine(FireRateHandler());
+        }
+        else if (currentFireType == WeaponFireType.GrenadeLauncher)
+        {
+            isShooting = false;
+            // Fire Grenade
+            GameObject instantGrenade = Instantiate(grenadePrefab, grenadeSpawn.position, grenadeSpawn.rotation);
+            Rigidbody grenadeRigid = instantGrenade.GetComponent<Rigidbody>();
+            grenadeRigid.velocity = grenadeSpawn.forward * grenadeVelocity;
+
+            StartCoroutine(FireRateHandler());
+        }
+
+        yield return null;
+    }
+
+    IEnumerator FireRateHandler()
+    {
+        if (currentFireType == WeaponFireType.SemiAuto)
+        {
+            currentFireRate = 1 / rateOfFire;
+            yield return new WaitForSeconds(currentFireRate);
+            isShooting = false;
+        }
+        if (currentFireType == WeaponFireType.FullyAuto)
+        {
+            currentFireRate = 1 / rateOfFire * 5;
+            yield return new WaitForSeconds(currentFireRate);
+            isShooting = false;
+        }
+        else if (currentFireType == WeaponFireType.GrenadeLauncher)
+        {
+            currentFireRate = 1 / (rateOfFire / 5);
+            yield return new WaitForSeconds(currentFireRate);
+            isShooting = false;
+        }
 
         yield return null;
     }
@@ -175,7 +208,6 @@ public class WeaponController : MonoBehaviour
     public void TriggerJump()
     {
         isGroundedTrigger = false;
-        //Debug.Log("Trigger Jump");
         weaponAnimator.SetTrigger("Jump");
     }
 
@@ -247,7 +279,7 @@ public class WeaponController : MonoBehaviour
     private void CalculateWeaponSway()
     {
         // As swayScale value becomes larger, weapon sway become less
-        var targetPosition = LissajousCurve(swayTime, swayAmountA, swayAmountB) / (isAimingIn ? swayScale * 3 : swayScale);
+        var targetPosition = LissajousCurve(swayTime, swayAmountA, swayAmountB) / (isAimingIn ? swayScale * 10 : swayScale);
 
         swayPosition = Vector3.Lerp(swayPosition, targetPosition, Time.smoothDeltaTime * swayLerpSpeed);
         swayTime += Time.deltaTime;

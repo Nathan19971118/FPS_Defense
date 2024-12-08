@@ -70,7 +70,8 @@ public static class Models
     public enum WeaponFireType
     {
         SemiAuto,
-        FullyAuto
+        FullyAuto,
+        GrenadeLauncher
     }
 
     [Serializable]
