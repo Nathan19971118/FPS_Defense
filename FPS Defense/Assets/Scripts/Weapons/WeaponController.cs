@@ -60,16 +60,17 @@ public class WeaponController : MonoBehaviour
     public bool isAimingIn;
 
     [Header("Shooting")]
+    public bool isShooting;
+    public float damage;
+    public float range = 100f;
     public float fireRate;
     private float nextTimeToFire = 0f;
     public List<WeaponFireType> allowedFireTypes;
     public WeaponFireType currentFireType; // Fire Mode
-    public float bulletVelocity = 1f;
-    public float grenadeVelocity = 10f;
+    public float bulletVelocity = 100f;
+    public float grenadeVelocity = 20f;
     [HideInInspector]
-    public bool isShooting;
-    public float damage;
-    public float range = 100f;
+    
 
     #region - Start / Update -
 
@@ -137,7 +138,7 @@ public class WeaponController : MonoBehaviour
 
             if (enemy != null)
             {
-                enemy.TakeDamage(damage);
+                enemy.TakeDamage(damage, true);
             }
         }
 

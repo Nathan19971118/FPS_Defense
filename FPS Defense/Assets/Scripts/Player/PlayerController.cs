@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using static Models;
 
 public class PlayerController : MonoBehaviour
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public Transform cameraHolder;
     public Transform _camera;
     public Transform feetTransform;
+    public Image crosshair;
 
     [Header("Settings")]
     public PlayerSettingsModel playerSettings;
@@ -174,6 +176,7 @@ public class PlayerController : MonoBehaviour
     private void AimingInPressed()
     {
         isAimingIn = true;
+
     }
 
     private void AimingInReleased()

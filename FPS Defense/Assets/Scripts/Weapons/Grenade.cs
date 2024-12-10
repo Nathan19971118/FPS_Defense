@@ -4,7 +4,28 @@ using UnityEngine;
 
 public class Grenade : MonoBehaviour
 {
-    Rigidbody rigid;
+    public GameObject meshObject;
+    public GameObject effectObject;
+    public Rigidbody rigid;
 
+    private void Start()
+    {
+        StartCoroutine(Explosion());
+    }
 
+    IEnumerator Explosion()
+    {
+        yield return new WaitForSeconds(3f);
+        rigid.velocity = Vector3.zero;
+        rigid.angularVelocity = Vector3.zero;
+        meshObject.SetActive(false);
+        effectObject.SetActive(true);
+
+        RaycastHit[] ratHits = Physics.SphereCastAll(transform.position, 15f, Vector3.up, 0f, LayerMask.GetMask("Enemy"));
+
+        foreach (RaycastHit hitObject in ratHits)
+        {
+            hitObject.transform.GetComponent<Enemy>().HitByGrenade(transform.position);
+        }
+    }
 }
