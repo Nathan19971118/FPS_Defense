@@ -115,7 +115,7 @@ public class PlayerController : MonoBehaviour
 
     #region - Shooting -
 
-    private void ShootingPressed()
+    public void ShootingPressed()
     {
         if (currentWeapon)
         {

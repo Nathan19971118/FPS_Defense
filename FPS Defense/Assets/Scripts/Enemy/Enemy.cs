@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int maxHealth;
-    public int currentHealth;
+    public float health;
 
+    /*
     Rigidbody rigid;
     BoxCollider boxCollider;
     Material material;
-
+    */
    // public MeshRenderer[] meshs;
 
+    public void TakeDamage(float amount)
+    {
+        health -= amount;
+        if(health <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
+    }
+
+    /*
     private void Awake()
     {
         rigid = GetComponent<Rigidbody>();
@@ -53,4 +68,5 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject, 4);
         }
     }
+    */
 }

@@ -60,14 +60,16 @@ public class WeaponController : MonoBehaviour
     public bool isAimingIn;
 
     [Header("Shooting")]
-    public float rateOfFire;
-    private float currentFireRate;
+    public float fireRate;
+    private float nextTimeToFire = 0f;
     public List<WeaponFireType> allowedFireTypes;
     public WeaponFireType currentFireType; // Fire Mode
-    public float bulletVelocity = 10f;
+    public float bulletVelocity = 1f;
     public float grenadeVelocity = 10f;
     [HideInInspector]
     public bool isShooting;
+    public float damage;
+    public float range = 100f;
 
     #region - Start / Update -
 
@@ -98,9 +100,20 @@ public class WeaponController : MonoBehaviour
 
     private void CalculateShooting()
     {
-        if (isShooting)
+        if (isShooting && currentFireType == WeaponFireType.SemiAuto)
         {
-            StartCoroutine("Shoot");
+            Shoot();
+            isShooting = false;
+        }
+        if (isShooting && currentFireType == WeaponFireType.FullyAuto && Time.time >= nextTimeToFire)
+        {
+            nextTimeToFire = Time.time + 1f / fireRate;
+            Shoot();
+        }
+        if(isShooting && currentFireType == WeaponFireType.GrenadeLauncher)
+        {
+            ShootGrenade();
+            isShooting = false;
         }
     }
 
@@ -113,63 +126,31 @@ public class WeaponController : MonoBehaviour
         currentFireType=allowedFireTypes[currentIndex];
     }
 
-    IEnumerator Shoot()
+    private void Shoot()
     {
-        if (currentFireType == WeaponFireType.SemiAuto)
+        RaycastHit hit;
+        if (Physics.Raycast(bulletSpawn.transform.position, bulletSpawn.transform.forward, out hit, range))
         {
-            isShooting = false;
-            // Fire Bullet
-            GameObject instantBullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
-            Rigidbody bulletRigid = instantBullet.GetComponent<Rigidbody>();
-            bulletRigid.velocity = bulletSpawn.forward * bulletVelocity;
+            Debug.Log(hit.transform.name);
 
-            StartCoroutine(FireRateHandler());
-        }
-        if (currentFireType == WeaponFireType.FullyAuto)
-        {
-            // Fire Bullet
-            GameObject instantBullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
-            Rigidbody bulletRigid = instantBullet.GetComponent<Rigidbody>();
-            bulletRigid.velocity = bulletSpawn.forward * bulletVelocity;
+            Enemy enemy = hit.transform.GetComponent<Enemy>();
 
-            StartCoroutine(FireRateHandler());
-        }
-        else if (currentFireType == WeaponFireType.GrenadeLauncher)
-        {
-            isShooting = false;
-            // Fire Grenade
-            GameObject instantGrenade = Instantiate(grenadePrefab, grenadeSpawn.position, grenadeSpawn.rotation);
-            Rigidbody grenadeRigid = instantGrenade.GetComponent<Rigidbody>();
-            grenadeRigid.velocity = grenadeSpawn.forward * grenadeVelocity;
-
-            StartCoroutine(FireRateHandler());
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damage);
+            }
         }
 
-        yield return null;
+        GameObject instantBullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+        Rigidbody bulletRigid = instantBullet.GetComponent<Rigidbody>();
+        bulletRigid.velocity = bulletSpawn.forward * bulletVelocity;
     }
 
-    IEnumerator FireRateHandler()
+    private void ShootGrenade()
     {
-        if (currentFireType == WeaponFireType.SemiAuto)
-        {
-            currentFireRate = 1 / rateOfFire;
-            yield return new WaitForSeconds(currentFireRate);
-            isShooting = false;
-        }
-        if (currentFireType == WeaponFireType.FullyAuto)
-        {
-            currentFireRate = 1 / rateOfFire * 5;
-            yield return new WaitForSeconds(currentFireRate);
-            isShooting = false;
-        }
-        else if (currentFireType == WeaponFireType.GrenadeLauncher)
-        {
-            currentFireRate = 1 / (rateOfFire / 5);
-            yield return new WaitForSeconds(currentFireRate);
-            isShooting = false;
-        }
-
-        yield return null;
+        GameObject instantGrenade = Instantiate(grenadePrefab, grenadeSpawn.position, grenadeSpawn.rotation);
+        Rigidbody grenadeRigid = instantGrenade.GetComponent<Rigidbody>();
+        grenadeRigid.velocity = grenadeSpawn.forward * grenadeVelocity;
     }
 
     #endregion

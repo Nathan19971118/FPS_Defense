@@ -6,7 +6,6 @@ public class Bullet : MonoBehaviour
 {
     [Header("Settings")]
     public float lifeTime = 1f;
-    public int damage;
 
     private void Awake()
     {
