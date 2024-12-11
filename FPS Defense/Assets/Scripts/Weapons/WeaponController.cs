@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor;
 using UnityEngine;
 using static Models;
 
@@ -68,8 +66,13 @@ public class WeaponController : MonoBehaviour
     public List<WeaponFireType> allowedFireTypes;
     public WeaponFireType currentFireType; // Fire Mode
     public float bulletVelocity = 100f;
-    public float grenadeVelocity = 20f;
-    [HideInInspector]
+    public float grenadeForce = 20f;
+
+    [Header("Ammo Control")]
+    public int maxAmmo;
+    public int currentAmmo;
+    public int grenadeMaxAmmo;
+    public int grenadeCurrentAmmo;
     
 
     #region - Start / Update -
@@ -104,16 +107,19 @@ public class WeaponController : MonoBehaviour
         if (isShooting && currentFireType == WeaponFireType.SemiAuto)
         {
             Shoot();
+            currentAmmo--;
             isShooting = false;
         }
         if (isShooting && currentFireType == WeaponFireType.FullyAuto && Time.time >= nextTimeToFire)
         {
             nextTimeToFire = Time.time + 1f / fireRate;
             Shoot();
+            currentAmmo--;
         }
         if(isShooting && currentFireType == WeaponFireType.GrenadeLauncher)
         {
             ShootGrenade();
+            grenadeCurrentAmmo--;
             isShooting = false;
         }
     }
@@ -151,11 +157,10 @@ public class WeaponController : MonoBehaviour
     {
         GameObject instantGrenade = Instantiate(grenadePrefab, grenadeSpawn.position, grenadeSpawn.rotation);
         Rigidbody grenadeRigid = instantGrenade.GetComponent<Rigidbody>();
-        grenadeRigid.velocity = grenadeSpawn.forward * grenadeVelocity;
+        grenadeRigid.AddForce(gameObject.transform.forward * grenadeForce, ForceMode.Impulse);
     }
 
     #endregion
-
 
     #region - Initialise -
 

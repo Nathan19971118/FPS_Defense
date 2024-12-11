@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using static Models;
@@ -63,6 +60,9 @@ public class PlayerController : MonoBehaviour
     public bool isGrounded;
     [HideInInspector]
     public bool isFalling;
+    public int ammo;
+    public int grenadeAmmo;
+    public bool isReload;
 
     [Header("Leaning")]
     public Transform leanPivot;
@@ -165,6 +165,7 @@ public class PlayerController : MonoBehaviour
         defaultInput.Weapon.Fire1Released.performed += e => ShootingReleased();
 
         defaultInput.Weapon.FireModeSwitch.performed += e => currentWeapon.CycleFireType();
+        defaultInput.Weapon.Reload.performed += e => ReloadAmmo();
 
         defaultInput.Enable();
     }
@@ -176,7 +177,6 @@ public class PlayerController : MonoBehaviour
     private void AimingInPressed()
     {
         isAimingIn = true;
-
     }
 
     private void AimingInReleased()
@@ -437,6 +437,17 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
+    #region
+
+    private void ReloadAmmo()
+    {
+        int reAmmo = ammo < currentWeapon.maxAmmo ? ammo : currentWeapon.maxAmmo;
+        currentWeapon.currentAmmo = reAmmo;
+        ammo -= reAmmo;
+        isReload = false;
+    }
+
+    #endregion
     #region - Gizmos - 
 
     private void OnDrawGizmos()

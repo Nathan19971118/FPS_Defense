@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Grenade : MonoBehaviour
@@ -7,6 +6,8 @@ public class Grenade : MonoBehaviour
     public GameObject meshObject;
     public GameObject effectObject;
     public Rigidbody rigid;
+
+    private float explosionRadius = 15f;
 
     private void Start()
     {
@@ -21,7 +22,7 @@ public class Grenade : MonoBehaviour
         meshObject.SetActive(false);
         effectObject.SetActive(true);
 
-        RaycastHit[] ratHits = Physics.SphereCastAll(transform.position, 15f, Vector3.up, 0f, LayerMask.GetMask("Enemy"));
+        RaycastHit[] ratHits = Physics.SphereCastAll(transform.position, explosionRadius, Vector3.up, 0f, LayerMask.GetMask("Enemy"));
 
         foreach (RaycastHit hitObject in ratHits)
         {
