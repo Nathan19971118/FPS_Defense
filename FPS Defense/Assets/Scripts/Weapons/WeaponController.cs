@@ -104,22 +104,31 @@ public class WeaponController : MonoBehaviour
 
     private void CalculateShooting()
     {
-        if (isShooting && currentFireType == WeaponFireType.SemiAuto)
+        if (currentAmmo > 0 && grenadeCurrentAmmo > 0)
         {
-            Shoot();
-            currentAmmo--;
-            isShooting = false;
+            if (isShooting && currentFireType == WeaponFireType.SemiAuto)
+            {
+                Shoot();
+                currentAmmo--;
+                isShooting = false;
+            }
+
+            if (isShooting && currentFireType == WeaponFireType.FullyAuto && Time.time >= nextTimeToFire)
+            {
+                nextTimeToFire = Time.time + 1f / fireRate;
+                Shoot();
+                currentAmmo--;
+            }
+
+            if (isShooting && currentFireType == WeaponFireType.GrenadeLauncher)
+            {
+                ShootGrenade();
+                grenadeCurrentAmmo--;
+                isShooting = false;
+            }
         }
-        if (isShooting && currentFireType == WeaponFireType.FullyAuto && Time.time >= nextTimeToFire)
+        else
         {
-            nextTimeToFire = Time.time + 1f / fireRate;
-            Shoot();
-            currentAmmo--;
-        }
-        if(isShooting && currentFireType == WeaponFireType.GrenadeLauncher)
-        {
-            ShootGrenade();
-            grenadeCurrentAmmo--;
             isShooting = false;
         }
     }

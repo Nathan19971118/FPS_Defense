@@ -3378,7 +3378,7 @@ MonoBehaviour:
   grenadeForce: 25
   maxAmmo: 30
   currentAmmo: 30
-  grenadeMaxAmmo: 3
+  grenadeMaxAmmo: 1
   grenadeCurrentAmmo: 1
 --- !u!4 &1527582786
 Transform:
@@ -5351,7 +5351,7 @@ MonoBehaviour:
   isGrounded: 0
   isFalling: 0
   ammo: 30
-  grenadeAmmo: 3
+  grenadeAmmo: 1
   isReload: 0
   leanPivot: {fileID: 38731975}
   leanAngle: 30

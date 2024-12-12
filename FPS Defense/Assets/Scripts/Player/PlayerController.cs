@@ -439,12 +439,23 @@ public class PlayerController : MonoBehaviour
 
     #region
 
-    private void ReloadAmmo()
+    public void ReloadAmmo()
     {
-        int reAmmo = ammo < currentWeapon.maxAmmo ? ammo : currentWeapon.maxAmmo;
-        currentWeapon.currentAmmo = reAmmo;
-        ammo -= reAmmo;
-        isReload = false;
+        if (currentWeapon.currentFireType == WeaponFireType.GrenadeLauncher)
+        {
+            int reAmmo = grenadeAmmo > currentWeapon.grenadeMaxAmmo ? grenadeAmmo : currentWeapon.grenadeMaxAmmo;
+            currentWeapon.grenadeCurrentAmmo = reAmmo;
+            grenadeAmmo -= reAmmo;
+            isReload = false;
+        }
+
+        else
+        {
+            int reAmmo = ammo > currentWeapon.maxAmmo ? ammo : currentWeapon.maxAmmo;
+            currentWeapon.currentAmmo = reAmmo;
+            ammo -= reAmmo;
+            isReload = false;
+        }
     }
 
     #endregion
