@@ -65,6 +65,13 @@ public static class Models
 
     #region - Weapon -
 
+    public enum WeaponType
+    {
+        Pistol,
+        AssultRifle,
+        Shotgun
+    }
+
     public enum WeaponFireType
     {
         SemiAuto,

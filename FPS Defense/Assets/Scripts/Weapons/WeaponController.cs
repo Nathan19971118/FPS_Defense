@@ -57,6 +57,10 @@ public class WeaponController : MonoBehaviour
     [HideInInspector]
     public bool isAimingIn;
 
+    [Header("Weapon Type")]
+    public List<WeaponType> allowedWeaponTypes;
+    public WeaponType currentWeaponType;
+
     [Header("Shooting")]
     public bool isShooting;
     public float damage;
@@ -104,7 +108,7 @@ public class WeaponController : MonoBehaviour
 
     private void CalculateShooting()
     {
-        if (currentAmmo > 0 && grenadeCurrentAmmo > 0)
+        if (currentAmmo > 0)
         {
             if (isShooting && currentFireType == WeaponFireType.SemiAuto)
             {
@@ -119,7 +123,10 @@ public class WeaponController : MonoBehaviour
                 Shoot();
                 currentAmmo--;
             }
+        }
 
+        if (grenadeCurrentAmmo > 0)
+        {
             if (isShooting && currentFireType == WeaponFireType.GrenadeLauncher)
             {
                 ShootGrenade();
@@ -127,6 +134,7 @@ public class WeaponController : MonoBehaviour
                 isShooting = false;
             }
         }
+
         else
         {
             isShooting = false;
