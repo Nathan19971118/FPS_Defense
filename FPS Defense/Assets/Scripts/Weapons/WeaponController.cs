@@ -57,10 +57,6 @@ public class WeaponController : MonoBehaviour
     [HideInInspector]
     public bool isAimingIn;
 
-    [Header("Weapon Type")]
-    public List<WeaponType> allowedWeaponTypes;
-    public WeaponType currentWeaponType;
-
     [Header("Shooting")]
     public bool isShooting;
     public float damage;
@@ -77,9 +73,14 @@ public class WeaponController : MonoBehaviour
     public int currentAmmo;
     public int grenadeMaxAmmo;
     public int grenadeCurrentAmmo;
-    
+
 
     #region - Start / Update -
+
+    private void Awake()
+    {
+        Initialise(playerController);
+    }
 
     private void Start()
     {
@@ -221,8 +222,6 @@ public class WeaponController : MonoBehaviour
 
     private void CalculateWeaponRotation()
     {
-        //weaponAnimator.speed = playerController.weaponAnimationSpeed;
-
         // Rotation sway
         targetWeaponRotation.y += (isAimingIn ? settings.swayAmount / 3 : settings.swayAmount) * (settings.swayXInverted ? -playerController.inputView.x : playerController.inputView.x) * Time.deltaTime;
         targetWeaponRotation.x += (isAimingIn ? settings.swayAmount / 3 : settings.swayAmount) * (settings.swayYInverted ? playerController.inputView.y : -playerController.inputView.y) * Time.deltaTime;

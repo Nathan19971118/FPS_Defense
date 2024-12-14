@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using static Models;
@@ -64,6 +66,10 @@ public class PlayerController : MonoBehaviour
     public int grenadeAmmo;
     public bool isReload;
 
+    [Header("Weapon Swap")]
+    public int weaponIndicator;
+    public GameObject[] weapons = new GameObject[3];
+
     [Header("Leaning")]
     public Transform leanPivot;
     private float currentLean; // Actual value of the lean
@@ -78,7 +84,7 @@ public class PlayerController : MonoBehaviour
     [Header("Aiming In")]
     public bool isAimingIn;
 
-    #region - Awake -
+    #region - Awake / Start -
 
     private void Awake()
     {
@@ -95,6 +101,11 @@ public class PlayerController : MonoBehaviour
         {
             currentWeapon.Initialise(this);
         }
+    }
+
+    private void Start()
+    {
+        SwitchWeapons(0);
     }
 
     #endregion
@@ -149,6 +160,7 @@ public class PlayerController : MonoBehaviour
         defaultInput.Player.Prone.performed += e => Prone();
         defaultInput.Player.Sprint.performed += e => ToggleSprint();
         defaultInput.Player.SprintReleased.performed += e => StopSprint();
+        defaultInput.Player.WeaponSwap.performed += e => SwitchWeapons((weaponIndicator < 2) ? weaponIndicator + 1 : 0);
 
         // Lean
         defaultInput.Player.LeanRightPressed.performed += e => isLeaningRight = true;
@@ -437,7 +449,7 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
-    #region
+    #region - Reload -
 
     public void ReloadAmmo()
     {
@@ -459,6 +471,23 @@ public class PlayerController : MonoBehaviour
     }
 
     #endregion
+
+    #region - Weapon Swap -
+
+    public void SwitchWeapons(int index)
+    {
+        for (int i = 0; i < weapons.Length; i++)
+        {
+            weapons[i].SetActive(false);
+        }
+        
+        weaponIndicator = index;
+        currentWeapon = weapons[index].GetComponent<WeaponController>();
+        weapons[index].SetActive(true);
+    }
+
+    #endregion
+
     #region - Gizmos - 
 
     private void OnDrawGizmos()
