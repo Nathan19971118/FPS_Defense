@@ -125,6 +125,15 @@ public partial class @DefaultInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""WeaponSwap"",
+                    ""type"": ""Button"",
+                    ""id"": ""76f0754a-2463-40e2-b9cf-e1f63e1e7015"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -303,6 +312,17 @@ public partial class @DefaultInput: IInputActionCollection2, IDisposable
                     ""action"": ""LeanRightReleased"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""29f284fb-d36f-4ef3-8aa7-05f5a807c2c2"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WeaponSwap"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -450,6 +470,7 @@ public partial class @DefaultInput: IInputActionCollection2, IDisposable
         m_Player_LeanRightPressed = m_Player.FindAction("LeanRightPressed", throwIfNotFound: true);
         m_Player_LeanLeftReleased = m_Player.FindAction("LeanLeftReleased", throwIfNotFound: true);
         m_Player_LeanRightReleased = m_Player.FindAction("LeanRightReleased", throwIfNotFound: true);
+        m_Player_WeaponSwap = m_Player.FindAction("WeaponSwap", throwIfNotFound: true);
         // Weapon
         m_Weapon = asset.FindActionMap("Weapon", throwIfNotFound: true);
         m_Weapon_Fire2Pressed = m_Weapon.FindAction("Fire2Pressed", throwIfNotFound: true);
@@ -530,6 +551,7 @@ public partial class @DefaultInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_LeanRightPressed;
     private readonly InputAction m_Player_LeanLeftReleased;
     private readonly InputAction m_Player_LeanRightReleased;
+    private readonly InputAction m_Player_WeaponSwap;
     public struct PlayerActions
     {
         private @DefaultInput m_Wrapper;
@@ -545,6 +567,7 @@ public partial class @DefaultInput: IInputActionCollection2, IDisposable
         public InputAction @LeanRightPressed => m_Wrapper.m_Player_LeanRightPressed;
         public InputAction @LeanLeftReleased => m_Wrapper.m_Player_LeanLeftReleased;
         public InputAction @LeanRightReleased => m_Wrapper.m_Player_LeanRightReleased;
+        public InputAction @WeaponSwap => m_Wrapper.m_Player_WeaponSwap;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -587,6 +610,9 @@ public partial class @DefaultInput: IInputActionCollection2, IDisposable
             @LeanRightReleased.started += instance.OnLeanRightReleased;
             @LeanRightReleased.performed += instance.OnLeanRightReleased;
             @LeanRightReleased.canceled += instance.OnLeanRightReleased;
+            @WeaponSwap.started += instance.OnWeaponSwap;
+            @WeaponSwap.performed += instance.OnWeaponSwap;
+            @WeaponSwap.canceled += instance.OnWeaponSwap;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -624,6 +650,9 @@ public partial class @DefaultInput: IInputActionCollection2, IDisposable
             @LeanRightReleased.started -= instance.OnLeanRightReleased;
             @LeanRightReleased.performed -= instance.OnLeanRightReleased;
             @LeanRightReleased.canceled -= instance.OnLeanRightReleased;
+            @WeaponSwap.started -= instance.OnWeaponSwap;
+            @WeaponSwap.performed -= instance.OnWeaponSwap;
+            @WeaponSwap.canceled -= instance.OnWeaponSwap;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -740,6 +769,7 @@ public partial class @DefaultInput: IInputActionCollection2, IDisposable
         void OnLeanRightPressed(InputAction.CallbackContext context);
         void OnLeanLeftReleased(InputAction.CallbackContext context);
         void OnLeanRightReleased(InputAction.CallbackContext context);
+        void OnWeaponSwap(InputAction.CallbackContext context);
     }
     public interface IWeaponActions
     {
