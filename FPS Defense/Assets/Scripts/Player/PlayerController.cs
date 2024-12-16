@@ -84,11 +84,12 @@ public class PlayerController : MonoBehaviour
     [Header("Aiming In")]
     public bool isAimingIn;
 
-    #region - Awake / Start -
+    #region - Awake -
 
     private void Awake()
     {
         InputSystem();
+        //SwitchWeapons(0);
 
         newCameraRotation = cameraHolder.localRotation.eulerAngles;
         newPlayerRotation = transform.localRotation.eulerAngles;
@@ -101,11 +102,6 @@ public class PlayerController : MonoBehaviour
         {
             currentWeapon.Initialise(this);
         }
-    }
-
-    private void Start()
-    {
-        SwitchWeapons(0);
     }
 
     #endregion
@@ -160,7 +156,7 @@ public class PlayerController : MonoBehaviour
         defaultInput.Player.Prone.performed += e => Prone();
         defaultInput.Player.Sprint.performed += e => ToggleSprint();
         defaultInput.Player.SprintReleased.performed += e => StopSprint();
-        defaultInput.Player.WeaponSwap.performed += e => SwitchWeapons((weaponIndicator < 2) ? weaponIndicator + 1 : 0);
+        //defaultInput.Player.WeaponSwap.performed += e => SwitchWeapons((weaponIndicator < 2) ? weaponIndicator + 1 : 0);
 
         // Lean
         defaultInput.Player.LeanRightPressed.performed += e => isLeaningRight = true;
@@ -473,7 +469,7 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region - Weapon Swap -
-
+    /*
     public void SwitchWeapons(int index)
     {
         for (int i = 0; i < weapons.Length; i++)
@@ -483,9 +479,9 @@ public class PlayerController : MonoBehaviour
         
         weaponIndicator = index;
         currentWeapon = weapons[index].GetComponent<WeaponController>();
-        weapons[index].SetActive(true);
+        currentWeapon.gameObject.SetActive(true);
     }
-
+    */
     #endregion
 
     #region - Gizmos - 
