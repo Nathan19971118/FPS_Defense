@@ -1,1 +1,6 @@
 *.psd filter=lfs diff=lfs merge=lfs -text
+.psd filter=lfs diff=lfs merge=lfs -text
+.db filter=lfs diff=lfs merge=lfs -text
+.fbx filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+FPS[[:space:]]Defense/Library/ArtifactDB filter=lfs diff=lfs merge=lfs -text
