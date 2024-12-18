@@ -1,0 +1,1924 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.29f1 (8d510ca76d2b) revision 9261324'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 32683 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.29f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Unity/GitHub/FPS_Defense/FPS Defense
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62569
+Successfully changed project path to: D:/Unity/GitHub/FPS_Defense/FPS Defense
+D:/Unity/GitHub/FPS_Defense/FPS Defense
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [27036] Host "[IP] 169.254.11.210 [Port] 0 [Flags] 2 [Guid] 2656589980 [EditorId] 2656589980 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IKSH7C5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [27036] Host "[IP] 169.254.11.210 [Port] 0 [Flags] 2 [Guid] 2656589980 [EditorId] 2656589980 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IKSH7C5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
+Refreshing native plugins compatible for Editor in 11.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.29f1 (8d510ca76d2b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.29f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity/GitHub/FPS_Defense/FPS Defense/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2488)
+    Vendor:   NVIDIA
+    VRAM:     8018 MB
+    Driver:   32.0.15.6094
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.29f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.29f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.29f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56704
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.29f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.29f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.29f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.023030 seconds.
+- Loaded All Assemblies, in  0.372 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 2298 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.579 seconds
+Domain Reload Profiling: 2946ms
+	BeginReloadAssembly (124ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (77ms)
+	LoadAllAssembliesAndSetupDomain (129ms)
+		LoadAssemblies (120ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (126ms)
+			TypeCache.Refresh (125ms)
+				TypeCache.ScanAssembly (114ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (2579ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2537ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2391ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (98ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.588 seconds
+Refreshing native plugins compatible for Editor in 3.49 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.583 seconds
+Domain Reload Profiling: 1167ms
+	BeginReloadAssembly (140ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (367ms)
+		LoadAssemblies (302ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (155ms)
+			TypeCache.Refresh (137ms)
+				TypeCache.ScanAssembly (124ms)
+			ScanForSourceGeneratedMonoScriptInfo (13ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (584ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (462ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (66ms)
+			ProcessInitializeOnLoadAttributes (329ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 3.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3914 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (115.4 KB). Loaded Objects now: 4382.
+Memory consumption went from 163.5 MB to 163.4 MB.
+Total: 2.694500 ms (FindLiveObjects: 0.251000 ms CreateObjectMapping: 0.091200 ms MarkObjects: 2.235600 ms  DeleteObjects: 0.116100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 528918.974257 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models
+  artifactKey: Guid(a8fd7a37cda675d4faa7f082f69e3bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models using Guid(a8fd7a37cda675d4faa7f082f69e3bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '259f9445018b79970db526f6a18f493e') in 0.002007 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 7.027950 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/bed.fbx
+  artifactKey: Guid(265727f4089558d47b0c6619d4c03f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/bed.fbx using Guid(265727f4089558d47b0c6619d4c03f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9451086a26cedf1f3ffc3f1ac80cb18') in 0.106032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 2.351559 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/bed_floor.fbx
+  artifactKey: Guid(9bca9ea064e98f648aca36dd59cfc9c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/bed_floor.fbx using Guid(9bca9ea064e98f648aca36dd59cfc9c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '172b4fab9dec9a927e09f404042cb2f5') in 0.018222 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.516200 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/bridge_center_stoneRound.fbx
+  artifactKey: Guid(7ddd8986b15e61d4a87e109c08917f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/bridge_center_stoneRound.fbx using Guid(7ddd8986b15e61d4a87e109c08917f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a126a9c5193e3679da5d89ac8b15443e') in 0.016050 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.428345 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/bridge_center_woodRound.fbx
+  artifactKey: Guid(2bbf8344797cb34438aca5dd74c7e822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/bridge_center_woodRound.fbx using Guid(2bbf8344797cb34438aca5dd74c7e822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b29d92ef454f04a6d814e5211c56d46') in 0.021791 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.349266 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/bridge_side_wood.fbx
+  artifactKey: Guid(286a2198bc887c0478e1fc24b90aaa8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/bridge_side_wood.fbx using Guid(286a2198bc887c0478e1fc24b90aaa8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf79d73ad4fcfe4b11c23bad8d38dda4') in 0.017835 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.366801 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/bridge_stoneRound.fbx
+  artifactKey: Guid(a99e9e03857b7f441b57a2c0c7447afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/bridge_stoneRound.fbx using Guid(a99e9e03857b7f441b57a2c0c7447afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b5020464928190b3c16aa566893e36') in 0.016815 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.299792 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/bridge_wood.fbx
+  artifactKey: Guid(5467ba45dec35654db04ba729f4e6986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/bridge_wood.fbx using Guid(5467ba45dec35654db04ba729f4e6986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b9e99e7483c208b8dbce3de8edb5fd8') in 0.019276 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.316998 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cactus_short.fbx
+  artifactKey: Guid(5d6c56aaaa5a3464583792e18577b1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cactus_short.fbx using Guid(5d6c56aaaa5a3464583792e18577b1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b98c0c9181fa575579f1fbad8d6a8f4') in 0.013901 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 1.208164 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cactus_tall.fbx
+  artifactKey: Guid(2f656042f48de9a4e80a51e8f3d6448d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cactus_tall.fbx using Guid(2f656042f48de9a4e80a51e8f3d6448d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b666a47c160b46a6d2e0148aabc4b39b') in 0.013696 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.843565 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/campfire_bricks.fbx
+  artifactKey: Guid(e36e714b437637a4d9877ddf2205856f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/campfire_bricks.fbx using Guid(e36e714b437637a4d9877ddf2205856f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f23b235db877edebf232ede1f3f1b367') in 0.014285 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 2.880677 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/campfire_planks.fbx
+  artifactKey: Guid(f86cec425e049b44f8b7efa45e18cecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/campfire_planks.fbx using Guid(f86cec425e049b44f8b7efa45e18cecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12cde663a793fcc1e5afc596d27187e8') in 0.014105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.514133 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/campfire_stones.fbx
+  artifactKey: Guid(56f8403397e8d5d4d9a2ab196f17e9d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/campfire_stones.fbx using Guid(56f8403397e8d5d4d9a2ab196f17e9d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e32bd0e261c0afa8b1e22f21df869c77') in 0.014545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.441298 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/canoe_paddle.fbx
+  artifactKey: Guid(0234d7f689b715742866d830cad28473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/canoe_paddle.fbx using Guid(0234d7f689b715742866d830cad28473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '513aaf0b8f3f525872d51fb08c1d3187') in 0.015027 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.550597 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_block_stone.fbx
+  artifactKey: Guid(1fbe4deaddd387f439f2c4517d845b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_block_stone.fbx using Guid(1fbe4deaddd387f439f2c4517d845b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e15a9800cf360cb8b7d0a0d268fceb3f') in 0.016473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.442569 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockCave_rock.fbx
+  artifactKey: Guid(17cabbc5e19482c4799579d2222d9578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockCave_rock.fbx using Guid(17cabbc5e19482c4799579d2222d9578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a0a3f5067f17c8c6ef7c1744fb22171') in 0.017836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.783142 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_block_rock.fbx
+  artifactKey: Guid(82ca5853a3ba8ce4e84e8f3b4c316250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_block_rock.fbx using Guid(82ca5853a3ba8ce4e84e8f3b4c316250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcbcf407ddb07e9bd945709f5b67bd83') in 0.016577 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.442 seconds
+Refreshing native plugins compatible for Editor in 3.62 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.962 seconds
+Domain Reload Profiling: 1400ms
+	BeginReloadAssembly (163ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (202ms)
+		LoadAssemblies (290ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (963ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (452ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (33ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (317ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (17ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 4.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3877 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (95.4 KB). Loaded Objects now: 4428.
+Memory consumption went from 154.2 MB to 154.1 MB.
+Total: 2.638100 ms (FindLiveObjects: 0.214500 ms CreateObjectMapping: 0.081300 ms MarkObjects: 2.255800 ms  DeleteObjects: 0.085900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.440 seconds
+Refreshing native plugins compatible for Editor in 3.36 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.004 seconds
+Domain Reload Profiling: 1440ms
+	BeginReloadAssembly (154ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (215ms)
+		LoadAssemblies (298ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (1004ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (462ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (66ms)
+			ProcessInitializeOnLoadAttributes (326ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (20ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 3.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3878 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (87.2 KB). Loaded Objects now: 4431.
+Memory consumption went from 154.5 MB to 154.4 MB.
+Total: 2.818200 ms (FindLiveObjects: 0.282200 ms CreateObjectMapping: 0.088300 ms MarkObjects: 2.368500 ms  DeleteObjects: 0.078600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.439 seconds
+Refreshing native plugins compatible for Editor in 3.74 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.010 seconds
+Domain Reload Profiling: 1445ms
+	BeginReloadAssembly (155ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (210ms)
+		LoadAssemblies (292ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1011ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (454ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (64ms)
+			ProcessInitializeOnLoadAttributes (323ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (18ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 3.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3878 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (87.4 KB). Loaded Objects now: 4434.
+Memory consumption went from 154.5 MB to 154.4 MB.
+Total: 2.609800 ms (FindLiveObjects: 0.216800 ms CreateObjectMapping: 0.087700 ms MarkObjects: 2.223100 ms  DeleteObjects: 0.081600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 106.076707 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/GLTF format/bed.glb
+  artifactKey: Guid(21a42c70a8b37f242b1d7a00f5708130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/GLTF format/bed.glb using Guid(21a42c70a8b37f242b1d7a00f5708130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc118da53234260fce5e1a7c121eeffc') in 0.008769 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.568622 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/GLTF format/bed_floor.glb
+  artifactKey: Guid(9b0c18356ba3dff4b89376d64c436599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/GLTF format/bed_floor.glb using Guid(9b0c18356ba3dff4b89376d64c436599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7d07c7ec45aaa64b375481884005e2f') in 0.000648 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.476002 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/GLTF format/bridge_center_stoneRound.glb
+  artifactKey: Guid(1e0e61cc0301af34c8ea4c55383a5c0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/GLTF format/bridge_center_stoneRound.glb using Guid(1e0e61cc0301af34c8ea4c55383a5c0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ed0c519c6f5704f00fc818c168e9c2c') in 0.000654 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 11.147378 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/GLTF format
+  artifactKey: Guid(d6f80dfb5c708384caf573b865d31e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/GLTF format using Guid(d6f80dfb5c708384caf573b865d31e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6574de0d5a8dcc2d55ec7276f99bbe8') in 0.000349 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 4.699886 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/DAE format
+  artifactKey: Guid(c605e2b879b6a434cab6f3ee7d704b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/DAE format using Guid(c605e2b879b6a434cab6f3ee7d704b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9f0f96f600aaedded709233fc0dddbf') in 0.000396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.504791 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/STL format
+  artifactKey: Guid(6591e0e1dc90ae548a7c6d86eebd0c70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/STL format using Guid(6591e0e1dc90ae548a7c6d86eebd0c70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd0f28ed49c007d2515a7ae029a73969') in 0.000495 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 4.097534 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Side/bridge_stone.png
+  artifactKey: Guid(c799646053cdd3049af98c11683b5bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Side/bridge_stone.png using Guid(c799646053cdd3049af98c11683b5bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4181db133d983928eb026671cb3415f') in 0.040092 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.784427 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Side/bridge_stoneRound.png
+  artifactKey: Guid(90c6e1303c5750e4ea1601dec0912adf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Side/bridge_stoneRound.png using Guid(90c6e1303c5750e4ea1601dec0912adf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd01761767972633e81aa34c7ba6b6eab') in 0.008777 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.855886 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Side
+  artifactKey: Guid(c89d97d08fac417499006a2769a65248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Side using Guid(c89d97d08fac417499006a2769a65248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '188864dac8c86f0e3d2959c2595fd15a') in 0.000409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.939732 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Isometric/bed_floor_NE.png
+  artifactKey: Guid(3379ed1f52550c14e80a62d522afc60c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Isometric/bed_floor_NE.png using Guid(3379ed1f52550c14e80a62d522afc60c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7c3482c70088ad48de95415c61ef3c7') in 0.009527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.539528 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Isometric/bed_floor_NW.png
+  artifactKey: Guid(2f1d56ce076de624295a8056e7d8d1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Isometric/bed_floor_NW.png using Guid(2f1d56ce076de624295a8056e7d8d1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2a6dd987d1bdff10b84fb9c98d55450') in 0.009247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.382105 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Isometric/bed_floor_SW.png
+  artifactKey: Guid(f9f9a23e1d0137b4ea70285b54243c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Isometric/bed_floor_SW.png using Guid(f9f9a23e1d0137b4ea70285b54243c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cd9a41bf21bc554ef86ae08d31e93c4') in 0.008279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 17.616121 seconds.
+  path: Assets/Turret & trap Asset/BearTrap_Open.fbx
+  artifactKey: Guid(7e296230398614b4cae0b12eaaea0c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turret & trap Asset/BearTrap_Open.fbx using Guid(7e296230398614b4cae0b12eaaea0c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f2ea267084bd719dd3d7c8cbc944ff') in 0.049453 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.825573 seconds.
+  path: Assets/Turret & trap Asset/FlamethrowerTurret.fbx
+  artifactKey: Guid(35d7375756b81f048a42e181e589c4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turret & trap Asset/FlamethrowerTurret.fbx using Guid(35d7375756b81f048a42e181e589c4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b5a781adecda4486c38a0d4ea6545e9') in 0.052952 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.386157 seconds.
+  path: Assets/Turret & trap Asset/GatelngGunTurret.fbx
+  artifactKey: Guid(d4db5f377242c0c41829fc2241aa2a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turret & trap Asset/GatelngGunTurret.fbx using Guid(d4db5f377242c0c41829fc2241aa2a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbfc5f6fff80ab44c3ea1c621fc9ed26') in 0.061441 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 45
+========================================================================
+Received Import Request.
+  Time since last request: 0.455631 seconds.
+  path: Assets/Turret & trap Asset/Hazard_SpikeTrap.fbx
+  artifactKey: Guid(2febb8a18ddea3c4bb0c3c2c9d9b81d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turret & trap Asset/Hazard_SpikeTrap.fbx using Guid(2febb8a18ddea3c4bb0c3c2c9d9b81d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a330c7167ad6223f00a79c959a86315') in 0.038956 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 2.191364 seconds.
+  path: Assets/Turret & trap Asset/Landmine.fbx
+  artifactKey: Guid(060c2f4ca842069449f3e383bee3145c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turret & trap Asset/Landmine.fbx using Guid(060c2f4ca842069449f3e383bee3145c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22794a4f743561dc420c730f32073ba5') in 0.021441 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.347946 seconds.
+  path: Assets/Turret & trap Asset/turret_double.fbx
+  artifactKey: Guid(42a6d98af77cd6242b6940e8bc77409f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turret & trap Asset/turret_double.fbx using Guid(42a6d98af77cd6242b6940e8bc77409f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcd8d17bc1a14562018277e3bc7878c5') in 0.027952 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.446293 seconds.
+  path: Assets/Turret & trap Asset/turret_single.fbx
+  artifactKey: Guid(827958cc1901652479688f623dbcc4c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turret & trap Asset/turret_single.fbx using Guid(827958cc1901652479688f623dbcc4c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc0160d69ed765392470d0b2da277e79') in 0.029225 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.468 seconds
+Refreshing native plugins compatible for Editor in 3.38 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.950 seconds
+Domain Reload Profiling: 1413ms
+	BeginReloadAssembly (163ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (228ms)
+		LoadAssemblies (294ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (25ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (4ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (950ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (404ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (63ms)
+			ProcessInitializeOnLoadAttributes (275ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 3.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3963 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (87.4 KB). Loaded Objects now: 4531.
+Memory consumption went from 158.0 MB to 157.9 MB.
+Total: 2.626200 ms (FindLiveObjects: 0.231500 ms CreateObjectMapping: 0.099500 ms MarkObjects: 2.211300 ms  DeleteObjects: 0.083300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.457 seconds
+Refreshing native plugins compatible for Editor in 4.76 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.985 seconds
+Domain Reload Profiling: 1438ms
+	BeginReloadAssembly (158ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (227ms)
+		LoadAssemblies (292ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (24ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (985ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (403ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (281ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 3.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3985 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (95.5 KB). Loaded Objects now: 4555.
+Memory consumption went from 158.7 MB to 158.6 MB.
+Total: 2.571500 ms (FindLiveObjects: 0.237400 ms CreateObjectMapping: 0.098900 ms MarkObjects: 2.148300 ms  DeleteObjects: 0.086300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 492.465523 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/canoe.fbx
+  artifactKey: Guid(8e9fa1c4217a5ad43bf34d26256384b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/canoe.fbx using Guid(8e9fa1c4217a5ad43bf34d26256384b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0295e2447ec0e1ef436821f16a57ef9') in 0.075300 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 5.077695 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockCave_stone.fbx
+  artifactKey: Guid(b2b480b7da0df2e4482ea068169b3fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockCave_stone.fbx using Guid(b2b480b7da0df2e4482ea068169b3fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4831c9573c3cd11abb26792ea747d18f') in 0.016185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.469005 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockDiagonal_rock.fbx
+  artifactKey: Guid(8a2974c91700ff349be94338cdd85b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockDiagonal_rock.fbx using Guid(8a2974c91700ff349be94338cdd85b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b96a7787c80c40a9198c96a93b1506e1') in 0.016674 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 4.907886 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockDiagonal_stone.fbx
+  artifactKey: Guid(97e0b11f1523ba942ad4c889b880343b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockDiagonal_stone.fbx using Guid(97e0b11f1523ba942ad4c889b880343b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ada55c7c7e9a2b28e5b9953341f3429') in 0.015721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.364873 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockHalf_rock.fbx
+  artifactKey: Guid(e879a18584b55944eae5f25800ff3eae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockHalf_rock.fbx using Guid(e879a18584b55944eae5f25800ff3eae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c301161ae28ead3b2fd776b72f52a196') in 0.016978 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.313463 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockHalf_stone.fbx
+  artifactKey: Guid(ad1badb2aa98ca64381df379f7f55b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockHalf_stone.fbx using Guid(ad1badb2aa98ca64381df379f7f55b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34956cc6e31499f476e316633a800a09') in 0.016585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.607823 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockQuarter_rock.fbx
+  artifactKey: Guid(1e9b044a4ddfc97448a697186b82940c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockQuarter_rock.fbx using Guid(1e9b044a4ddfc97448a697186b82940c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08b35b0cc848bf1afd347717e711b8c2') in 0.015895 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.362699 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockQuarter_stone.fbx
+  artifactKey: Guid(d28e6bf12d8e7514d9529dde684f4d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockQuarter_stone.fbx using Guid(d28e6bf12d8e7514d9529dde684f4d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76c62e20a004c11f450501b97db65c11') in 0.018053 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.096057 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockSlope_rock.fbx
+  artifactKey: Guid(00171584056fa2145a4b6c0659b5c434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockSlope_rock.fbx using Guid(00171584056fa2145a4b6c0659b5c434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70cd2d1e54e9b136208fa043a34f48a1') in 0.016326 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.354670 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockSlope_stone.fbx
+  artifactKey: Guid(bcdc2f05881886049b8afaa60400c95a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockSlope_stone.fbx using Guid(bcdc2f05881886049b8afaa60400c95a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5423de68b7c9cb9fd62f19cbf4d7886') in 0.016929 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.818672 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockSlopeHalfWalls_rock.fbx
+  artifactKey: Guid(d4eee4f1373bc1a4699365ed935984ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockSlopeHalfWalls_rock.fbx using Guid(d4eee4f1373bc1a4699365ed935984ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cd52bd53bc56426f94213dbbc92d79a') in 0.016413 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 2.106371 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockSlopeHalfWalls_stone.fbx
+  artifactKey: Guid(a7295df843d5db44ab16774d10dc9f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockSlopeHalfWalls_stone.fbx using Guid(a7295df843d5db44ab16774d10dc9f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f7e44fc3cfcf9c0bd9a20a8b0e1fef') in 0.016458 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.433428 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockSlopeWalls_rock.fbx
+  artifactKey: Guid(85951be309519384d9bf989fd072f64e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockSlopeWalls_rock.fbx using Guid(85951be309519384d9bf989fd072f64e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e9cd3ee1f2c0ec1267411afadc08a99') in 0.016590 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.829180 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockSlopeWalls_stone.fbx
+  artifactKey: Guid(8dfb9dc9682689046824273138a2f16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_blockSlopeWalls_stone.fbx using Guid(8dfb9dc9682689046824273138a2f16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b490532881091a2dce681cf6a8951214') in 0.016810 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.177363 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_cave_rock.fbx
+  artifactKey: Guid(41e2547bf081fc64e954c6078c3d9308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_cave_rock.fbx using Guid(41e2547bf081fc64e954c6078c3d9308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbcf844aa959efa902a12657a528b6cc') in 0.014693 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 2.291236 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_corner_stone.fbx
+  artifactKey: Guid(722c97f1626868942855c2482c594e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_corner_stone.fbx using Guid(722c97f1626868942855c2482c594e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adbef60af250e6960bd4c472ddcc5a30') in 0.014095 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.584076 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_corner_rock.fbx
+  artifactKey: Guid(520d5ff999144ea4a809ba37d1afcd15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_corner_rock.fbx using Guid(520d5ff999144ea4a809ba37d1afcd15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e97f1dd19bf16f92e06f5271dacd29cd') in 0.015159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.508091 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_cornerInner_stone.fbx
+  artifactKey: Guid(4c9aaec42a9fba343ac24cc161f96548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_cornerInner_stone.fbx using Guid(4c9aaec42a9fba343ac24cc161f96548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bb8fae788223f636bcdb5c9f5ad400a') in 0.015545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.533839 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_cornerInnerLarge_rock.fbx
+  artifactKey: Guid(d7a2ce42a0456ac45891874032cfd52e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_cornerInnerLarge_rock.fbx using Guid(d7a2ce42a0456ac45891874032cfd52e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ba0c1400dcb1c9c061370d63bfcfc34') in 0.015251 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.365897 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_cornerInnerTop_stone.fbx
+  artifactKey: Guid(da32d29849df9e54281a2a3aa114a01b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_cornerInnerTop_stone.fbx using Guid(da32d29849df9e54281a2a3aa114a01b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85e701e3fce757be2b979da73181a8f0') in 0.016723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.636954 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_cornerLarge_stone.fbx
+  artifactKey: Guid(eb8d828682e9d4c4e982e38267de72e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_cornerLarge_stone.fbx using Guid(eb8d828682e9d4c4e982e38267de72e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb1e39cf67c5fdb412a6f51964ae908a') in 0.015036 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.806386 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_diagonal_stone.fbx
+  artifactKey: Guid(bc523fd91f6aaf345b290e2da6c25907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_diagonal_stone.fbx using Guid(bc523fd91f6aaf345b290e2da6c25907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aff110662a2b9f3dcd80a4fc32c3ef05') in 0.013674 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.512441 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_half_rock.fbx
+  artifactKey: Guid(55901a9537e673e4ca4fbcf045686df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_half_rock.fbx using Guid(55901a9537e673e4ca4fbcf045686df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef1a87606fcf44a7696d5d183fd86970') in 0.016203 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 2.019545 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_half_stone.fbx
+  artifactKey: Guid(330113f3d54f5e844b730b886c3803cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_half_stone.fbx using Guid(330113f3d54f5e844b730b886c3803cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b165ecb33db09f27e739b584759c6b82') in 0.016697 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.466392 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_halfCorner_rock.fbx
+  artifactKey: Guid(68e768f664506fe43b652f6b49901b0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_halfCorner_rock.fbx using Guid(68e768f664506fe43b652f6b49901b0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52421d3114d2f2bcb5239344ec6d3304') in 0.017085 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.830527 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_halfCorner_stone.fbx
+  artifactKey: Guid(fff0bdeac1ca1f84d9d7b41df6c9307f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_halfCorner_stone.fbx using Guid(fff0bdeac1ca1f84d9d7b41df6c9307f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08ee78e03fb1193ed70bcf6ab5e732cd') in 0.016522 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.531574 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_halfCornerInner_stone.fbx
+  artifactKey: Guid(c85df7c070894184484ab0e479fdf2df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_halfCornerInner_stone.fbx using Guid(c85df7c070894184484ab0e479fdf2df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c496cb6dd9aa9e1c47504d13637a1d10') in 0.018330 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 2.255873 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_halfCornerInner_rock.fbx
+  artifactKey: Guid(d925a4c62a3424240a08511f9cf881d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_halfCornerInner_rock.fbx using Guid(d925a4c62a3424240a08511f9cf881d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bc6d14c546b18de94b98755ed09c441') in 0.020126 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 6.348194 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_diagonal_rock.fbx
+  artifactKey: Guid(0f4a578e98570424a987b1ba63736b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_diagonal_rock.fbx using Guid(0f4a578e98570424a987b1ba63736b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3408c54de7bc4b1829fd0214033d3e5b') in 0.013880 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 1.981123 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_large_rock.fbx
+  artifactKey: Guid(0b16c8bc53455894fb7c06d9d7deae8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_large_rock.fbx using Guid(0b16c8bc53455894fb7c06d9d7deae8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d858dee3e38d6d0f7defc791ee4370') in 0.014200 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.463363 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_large_stone.fbx
+  artifactKey: Guid(490446e8588e98444be5c6032ca90d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_large_stone.fbx using Guid(490446e8588e98444be5c6032ca90d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16b8489a556475f555b2956ab1e271ab') in 0.014287 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.358898 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_steps_rock.fbx
+  artifactKey: Guid(e2f8044dfc968d04fb5c130224ca242c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_steps_rock.fbx using Guid(e2f8044dfc968d04fb5c130224ca242c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de9e1e808c96383b8114b3db5a919524') in 0.017743 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.615066 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_stepsCorner_rock.fbx
+  artifactKey: Guid(94900791550aba847a52d42f69a2d330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_stepsCorner_rock.fbx using Guid(94900791550aba847a52d42f69a2d330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd23ea691f9a1562deee450cc77da9fb1') in 0.017229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.108028 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_stepsCornerInner_rock.fbx
+  artifactKey: Guid(ea2195c8f0715c94a91faa7fb8c143b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_stepsCornerInner_rock.fbx using Guid(ea2195c8f0715c94a91faa7fb8c143b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bde0f5a611a527ac0926448feeed2c7') in 0.018008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.349989 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_stepsCornerInner_stone.fbx
+  artifactKey: Guid(231b7ee701d58174ea3ab0e2e93ae96f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_stepsCornerInner_stone.fbx using Guid(231b7ee701d58174ea3ab0e2e93ae96f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cc03c6f9658cf07ee888d667d82c2ed') in 0.016766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.065806 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_top_rock.fbx
+  artifactKey: Guid(631f95174d7ed3e42839c2315ce606a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_top_rock.fbx using Guid(631f95174d7ed3e42839c2315ce606a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a67125f62f5014006899441a50e634d7') in 0.016269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.337821 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_topDiagonal_rock.fbx
+  artifactKey: Guid(226f554e80bfa204b9b65b7db8e1a274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_topDiagonal_rock.fbx using Guid(226f554e80bfa204b9b65b7db8e1a274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c872d9c34cd5947a9aaac172e267f70d') in 0.017198 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.540631 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_waterfallTop_rock.fbx
+  artifactKey: Guid(b50bea919fb54e849b5b79d340a5c327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/cliff_waterfallTop_rock.fbx using Guid(b50bea919fb54e849b5b79d340a5c327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34e2c65aef1838476791fb6bddfb5c12') in 0.024030 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.291066 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/crop_carrot.fbx
+  artifactKey: Guid(ab908e434368aff4d9ec4a8b44ddda96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/crop_carrot.fbx using Guid(ab908e434368aff4d9ec4a8b44ddda96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a39bd660189fd0d661a44a176670a55e') in 0.017317 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.155883 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/crop_melon.fbx
+  artifactKey: Guid(d1ea0ad305599df49986491b8354fe42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/crop_melon.fbx using Guid(d1ea0ad305599df49986491b8354fe42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '065a2c9ca3d2cff04123c4a597d492af') in 0.019141 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.342165 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/crop_turnip.fbx
+  artifactKey: Guid(29308ed21713a944aaf42d548cd76b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/crop_turnip.fbx using Guid(29308ed21713a944aaf42d548cd76b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5c534ea1a3efe90b9c6a985e70705df') in 0.015917 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.332822 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/crops_cornStageB.fbx
+  artifactKey: Guid(4662105918d51b944882cc973ffe1e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/crops_cornStageB.fbx using Guid(4662105918d51b944882cc973ffe1e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6d76be027929b805671d3d8dbfcf370') in 0.014177 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.702533 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/crops_dirtSingle.fbx
+  artifactKey: Guid(13cdaf6427bb4a54abe8daef2df76981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/crops_dirtSingle.fbx using Guid(13cdaf6427bb4a54abe8daef2df76981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91430fe23e5ea76e12bc747a5cc0c4f8') in 0.016569 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.520378 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/crops_leafsStageB.fbx
+  artifactKey: Guid(beb64915caed8054db02f1d40356dd83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/crops_leafsStageB.fbx using Guid(beb64915caed8054db02f1d40356dd83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '843357c7d486bc6a5d888616d02c4dda') in 0.014202 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 22.983918 seconds.
+  path: Assets/Prefabs/Maps
+  artifactKey: Guid(245138088d3bb8148ab1f6ab3eaf18e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Maps using Guid(245138088d3bb8148ab1f6ab3eaf18e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7542f674e821428243a647b43acec4bc') in 0.000389 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.112650 seconds.
+  path: Assets/Prefabs/Maps/cliff_block_rock.fbx
+  artifactKey: Guid(6a79b3d3b6d16274bb46279bad8801dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Maps/cliff_block_rock.fbx using Guid(6a79b3d3b6d16274bb46279bad8801dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74e92287ee199a5ddeabd89d58f33436') in 0.016063 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 37.113653 seconds.
+  path: Assets/Prefabs/Maps/cliff_block_rock.prefab
+  artifactKey: Guid(7a600800299fde44aa6320387cb1fb2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Maps/cliff_block_rock.prefab using Guid(7a600800299fde44aa6320387cb1fb2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6b39c09b4115330ee57e971af4933a0') in 0.011025 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.437 seconds
+Refreshing native plugins compatible for Editor in 3.25 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.050 seconds
+Domain Reload Profiling: 1482ms
+	BeginReloadAssembly (155ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (207ms)
+		LoadAssemblies (284ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1050ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (465ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (33ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (69ms)
+			ProcessInitializeOnLoadAttributes (323ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (17ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 3.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3984 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (71.2 KB). Loaded Objects now: 4558.
+Memory consumption went from 158.5 MB to 158.5 MB.
+Total: 2.621500 ms (FindLiveObjects: 0.249300 ms CreateObjectMapping: 0.085000 ms MarkObjects: 2.205800 ms  DeleteObjects: 0.080900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 363.997831 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/flower_purpleA.fbx
+  artifactKey: Guid(f4eaf6d0fec9ac948bb31e99b9d274bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/flower_purpleA.fbx using Guid(f4eaf6d0fec9ac948bb31e99b9d274bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5423014d18bb34d9fa26f79a3949b86e') in 0.075168 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.333522 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/flower_purpleB.fbx
+  artifactKey: Guid(d920b778543c5694fa9cd6b48a3a207d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/flower_purpleB.fbx using Guid(d920b778543c5694fa9cd6b48a3a207d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a32df3e91c8a7c2ba114b272644feb78') in 0.017130 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.634470 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/flower_purpleC.fbx
+  artifactKey: Guid(78ca01bc439a8f342be00d5579a0e837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/flower_purpleC.fbx using Guid(78ca01bc439a8f342be00d5579a0e837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4efed452d38be7ffa3334210eb42ddd6') in 0.020967 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.699592 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/flower_redA.fbx
+  artifactKey: Guid(6ab2744f564f3474cb0c8de258876f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/flower_redA.fbx using Guid(6ab2744f564f3474cb0c8de258876f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '521f8d0e951f593a8f5971633f643e2c') in 0.016263 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.539116 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/flower_redB.fbx
+  artifactKey: Guid(6e45a80d8b5b720408f693e8b78f3cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/flower_redB.fbx using Guid(6e45a80d8b5b720408f693e8b78f3cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2c58adcc26bf4afc044753468181205') in 0.017192 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.298129 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/flower_yellowA.fbx
+  artifactKey: Guid(abce29862e0b4fc49a370a3d3fa51615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/flower_yellowA.fbx using Guid(abce29862e0b4fc49a370a3d3fa51615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f35f36a3a35d90a444c04c42a973cf0c') in 0.016587 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.549370 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/flower_yellowB.fbx
+  artifactKey: Guid(7ce88c686da7ea4448b6af643b81d51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/flower_yellowB.fbx using Guid(7ce88c686da7ea4448b6af643b81d51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d8b105f4cfbf0d65b853926979e7f32') in 0.016502 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.648011 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/flower_redC.fbx
+  artifactKey: Guid(987020c239ba1234a88a8e380611690d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/flower_redC.fbx using Guid(987020c239ba1234a88a8e380611690d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '487c9abfae0814c8feb467f61186444b') in 0.019529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 16.109292 seconds.
+  path: Assets/Prefabs/Maps/flower_redA.prefab
+  artifactKey: Guid(9af9a73d27dfeb34e9b6027d6668aff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Maps/flower_redA.prefab using Guid(9af9a73d27dfeb34e9b6027d6668aff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a58c0c6c153f4f6afd75cd7a3d5483ce') in 0.010668 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 132.956675 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/grass.fbx
+  artifactKey: Guid(fbdb4a3848bfb174ea9bccdfe0e51ece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/grass.fbx using Guid(fbdb4a3848bfb174ea9bccdfe0e51ece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffac8cf63e126d0c3eddf266332cdd2b') in 0.014173 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 1.130122 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/grass_leafsLarge.fbx
+  artifactKey: Guid(b4fb96f4170fd2345b9455fdd3efc05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/grass_leafsLarge.fbx using Guid(b4fb96f4170fd2345b9455fdd3efc05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9538ed836744ba32b78fbf5cf650deae') in 0.014132 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.395911 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_pathBend.fbx
+  artifactKey: Guid(f16a8886a7f373a4fb4d0778cf3f3422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_pathBend.fbx using Guid(f16a8886a7f373a4fb4d0778cf3f3422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d18d1d36d21147a9fe33edb2ee58eed') in 0.020719 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.315026 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_pathCornerSmall.fbx
+  artifactKey: Guid(788e2250e4ab7af49b74579427647e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_pathCornerSmall.fbx using Guid(788e2250e4ab7af49b74579427647e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6f2d12859b8dfca82be4914fb040220') in 0.019196 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 2.454892 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_pathCorner.fbx
+  artifactKey: Guid(e6b2916af251bc742a0aa710c848ef53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_pathCorner.fbx using Guid(e6b2916af251bc742a0aa710c848ef53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22bfa6704e9d44db211a75dc7cdc12a8') in 0.019430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.182786 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_pathBendBank.fbx
+  artifactKey: Guid(75f4578b0b34e994786c91c211442b61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_pathBendBank.fbx using Guid(75f4578b0b34e994786c91c211442b61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54cbea1c26caf28105be9ac048d7267e') in 0.018373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.797119 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverBend.fbx
+  artifactKey: Guid(742c536250276904799369be72f9a574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverBend.fbx using Guid(742c536250276904799369be72f9a574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f69d14d0c6e3d53540c182bce040dc38') in 0.019600 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.453852 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverBendBank.fbx
+  artifactKey: Guid(e4cdbffa60f4bd64eb423ecc32984727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverBendBank.fbx using Guid(e4cdbffa60f4bd64eb423ecc32984727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4d8f772b42c60c1437b7939559c2ddd') in 0.020669 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.550092 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverCorner.fbx
+  artifactKey: Guid(856ca36b5c1d91749b05df9fdefd692d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverCorner.fbx using Guid(856ca36b5c1d91749b05df9fdefd692d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3583bd6feb74be37c59563e12a66585d') in 0.021454 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.697612 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverEnd.fbx
+  artifactKey: Guid(23ae57df82771f94287a9ef45fe78008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverEnd.fbx using Guid(23ae57df82771f94287a9ef45fe78008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a695b81bbfffe6c6471db354c3d1ab49') in 0.020806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.351404 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverOpen.fbx
+  artifactKey: Guid(e23ea8705624d0547bb50acafabd7ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverOpen.fbx using Guid(e23ea8705624d0547bb50acafabd7ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3468acc3b6aa0d183474eea5fb96ba0') in 0.014700 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.353664 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverRocks.fbx
+  artifactKey: Guid(6e7f2ddacaec2ea4e96ba4e6230a4d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverRocks.fbx using Guid(6e7f2ddacaec2ea4e96ba4e6230a4d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '722c02c15171eabf57387dfe19ce9f82') in 0.023164 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 4.291136 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverSide.fbx
+  artifactKey: Guid(0c0ff375feb401b438acb585b46c09cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverSide.fbx using Guid(0c0ff375feb401b438acb585b46c09cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a6dbea8516d8499e2cddfde8ea24d99') in 0.021620 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 4.844227 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverSideOpen.fbx
+  artifactKey: Guid(fb3e8b520e789ca4080defd8779d6002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverSideOpen.fbx using Guid(fb3e8b520e789ca4080defd8779d6002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16313060f54dc0a355335c7b92d5e414') in 0.022671 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 1.410812 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverSplit.fbx
+  artifactKey: Guid(aee38764fd74b3c4088e8bef5b8df69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverSplit.fbx using Guid(aee38764fd74b3c4088e8bef5b8df69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f249664d894714230f3155588b82df0') in 0.021542 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.809202 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverStraight.fbx
+  artifactKey: Guid(d35a9dc5a604e6f4b93a2df812706e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverStraight.fbx using Guid(d35a9dc5a604e6f4b93a2df812706e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '253f2f317deaec080d301670e786a975') in 0.020513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 1.294527 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverTile.fbx
+  artifactKey: Guid(2e60ee1ed6bf52d4da11ca4645efb784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/ground_riverTile.fbx using Guid(2e60ee1ed6bf52d4da11ca4645efb784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee56ab6693cbec40ceec9180177d1d35') in 0.021648 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 1.972418 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/hanging_moss.fbx
+  artifactKey: Guid(de0d0809adaad2f4cb722d79cc6d9f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/hanging_moss.fbx using Guid(de0d0809adaad2f4cb722d79cc6d9f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90cca041f6e02a1310825bed1546f91b') in 0.015926 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 1.797342 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/lily_large.fbx
+  artifactKey: Guid(6556256f1c2888846965c801373a57f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/lily_large.fbx using Guid(6556256f1c2888846965c801373a57f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed2221d02e194ed662b52caecb4b79ec') in 0.020092 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.427502 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/lily_small.fbx
+  artifactKey: Guid(6feb8a6864060594fa52d09eddf050b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/lily_small.fbx using Guid(6feb8a6864060594fa52d09eddf050b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359e45cb958062a9c66386b835c44e0c') in 0.017500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 3.065887 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/path_woodCorner.fbx
+  artifactKey: Guid(79b86a908e0a8b24eb63487f9a6e1881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/path_woodCorner.fbx using Guid(79b86a908e0a8b24eb63487f9a6e1881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c91aaa006c131268652def262b671880') in 0.017240 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.505885 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/path_woodEnd.fbx
+  artifactKey: Guid(625facc3037987a4d8cab75815c6ab16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/path_woodEnd.fbx using Guid(625facc3037987a4d8cab75815c6ab16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d155e727e2af42f42df5ee5e0c29995') in 0.018419 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.477758 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_smallTopB.fbx
+  artifactKey: Guid(bcbd1022757bf2f46810877bb8b7ee14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_smallTopB.fbx using Guid(bcbd1022757bf2f46810877bb8b7ee14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06c7ac3ef9f68dd0e0a2b64b7739d0da') in 0.017288 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.620432 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_tallF.fbx
+  artifactKey: Guid(55e75d878bb0c7b438929e1090488000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_tallF.fbx using Guid(55e75d878bb0c7b438929e1090488000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4608411b86b957b3ac4a5c274b56f458') in 0.020125 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 2.263168 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_smallG.fbx
+  artifactKey: Guid(0dbd295b855b4e5449668e71ab79a589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_smallG.fbx using Guid(0dbd295b855b4e5449668e71ab79a589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90de2dbbd505c5441be76bb18c27e9ed') in 0.017368 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.583478 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_smallTopA.fbx
+  artifactKey: Guid(21c77f90b3374d544a6595c2f4779867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_smallTopA.fbx using Guid(21c77f90b3374d544a6595c2f4779867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dfebaaa30aba0f5a38ebc12fb4090af') in 0.016638 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.564747 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_tallC.fbx
+  artifactKey: Guid(0785ecc378c06d243a0e9ce37a6cc69e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_tallC.fbx using Guid(0785ecc378c06d243a0e9ce37a6cc69e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f3042c85b0dd8ae09fce18ea3df84d9') in 0.023020 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.626089 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_tallE.fbx
+  artifactKey: Guid(07ad6438112ced4439bdfba6b1d3409a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_tallE.fbx using Guid(07ad6438112ced4439bdfba6b1d3409a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a213e54391a3fa4221b4305d8b6cc1c6') in 0.018988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.802113 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_tallG.fbx
+  artifactKey: Guid(7b8d15d6f6462704daace0a987a1cc38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_tallG.fbx using Guid(7b8d15d6f6462704daace0a987a1cc38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77ed92ab1ac8e364f6c9dd4cfc6e2c35') in 0.018619 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.423801 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_tallI.fbx
+  artifactKey: Guid(3540afba2980fc14e95d19a90d9bac45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_tallI.fbx using Guid(3540afba2980fc14e95d19a90d9bac45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb2432a726f49b3ee590733a70a53c5c') in 0.019376 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.360295 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_tallJ.fbx
+  artifactKey: Guid(c42214d8b9c4eb5478cebaf38704bca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_tallJ.fbx using Guid(c42214d8b9c4eb5478cebaf38704bca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac718209da25ed4b109827a6a56f3ba6') in 0.019465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.104525 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_smallD.fbx
+  artifactKey: Guid(c64cf56bceb560f428e29a319061904c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_smallD.fbx using Guid(c64cf56bceb560f428e29a319061904c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d62d69513319f18053c6f36b36dcb34') in 0.019337 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.199204 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_smallC.fbx
+  artifactKey: Guid(a937abcffe188224a91e7ce2524253f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/rock_smallC.fbx using Guid(a937abcffe188224a91e7ce2524253f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a4b74c102c0d00467f4f3212a9ab781') in 0.016404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 9.600189 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/sign.fbx
+  artifactKey: Guid(82cbe67badefc0447b60fcce84b56ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/sign.fbx using Guid(82cbe67badefc0447b60fcce84b56ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbeae7519af33f09103657e1254d9f9a') in 0.019258 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 2.128498 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/tree_blocks_dark.fbx
+  artifactKey: Guid(9be70d565d892974b90c6614552f761c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/tree_blocks_dark.fbx using Guid(9be70d565d892974b90c6614552f761c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2ef295894abd38dfcdebf72801e5cff') in 0.017546 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.620687 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/tree_cone.fbx
+  artifactKey: Guid(e6c69a87e4ed29f4ab5844c0ede820c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/tree_cone.fbx using Guid(e6c69a87e4ed29f4ab5844c0ede820c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ff33c5e11671b22dd7ef43bd6df484e') in 0.017502 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 61.350536 seconds.
+  path: Assets/Prefabs/Maps/tree_cone.prefab
+  artifactKey: Guid(a3d3603ee228a3e42b19a8f58683a3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Maps/tree_cone.prefab using Guid(a3d3603ee228a3e42b19a8f58683a3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e18bae314a0b40d8152e6403d8dc27') in 0.011972 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.461 seconds
+Refreshing native plugins compatible for Editor in 3.45 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.070 seconds
+Domain Reload Profiling: 1526ms
+	BeginReloadAssembly (164ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (216ms)
+		LoadAssemblies (300ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (1070ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (465ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (67ms)
+			ProcessInitializeOnLoadAttributes (325ms)
+			ProcessInitializeOnLoadMethodAttributes (21ms)
+			AfterProcessingInitializeOnLoad (17ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 4.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3984 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (71.3 KB). Loaded Objects now: 4561.
+Memory consumption went from 158.9 MB to 158.9 MB.
+Total: 2.871300 ms (FindLiveObjects: 0.237400 ms CreateObjectMapping: 0.088100 ms MarkObjects: 2.462200 ms  DeleteObjects: 0.083100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 167.673807 seconds.
+  path: Assets/Prefabs/Maps/tree_cone.prefab
+  artifactKey: Guid(a3d3603ee228a3e42b19a8f58683a3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Maps/tree_cone.prefab using Guid(a3d3603ee228a3e42b19a8f58683a3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be0b14ebc9895d623b435bc857f2fc3c') in 0.050473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 44.755864 seconds.
+  path: Assets/Prefabs/Maps/tree_cone.prefab
+  artifactKey: Guid(a3d3603ee228a3e42b19a8f58683a3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Maps/tree_cone.prefab using Guid(a3d3603ee228a3e42b19a8f58683a3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2963d5af389613ee418109ff532fb79a') in 0.005445 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 20.680827 seconds.
+  path: Assets/Prefabs/Maps/tree_cone.prefab
+  artifactKey: Guid(a3d3603ee228a3e42b19a8f58683a3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Maps/tree_cone.prefab using Guid(a3d3603ee228a3e42b19a8f58683a3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8adb8aaf228d4850b6359372a75383f') in 0.005294 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 5.968202 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/tent_smallClosed.fbx
+  artifactKey: Guid(ec225a865cabc8c488b1b8deb60335f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/tent_smallClosed.fbx using Guid(ec225a865cabc8c488b1b8deb60335f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '204dfc2ee74a9cccdcee011a9a092854') in 0.035827 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.023262 seconds.
+  path: Assets/Map Assets/kenney_conveyor-kit/Models/FBX format/top.fbx
+  artifactKey: Guid(eb27cc165e9cfe24dadaff0821951900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_conveyor-kit/Models/FBX format/top.fbx using Guid(eb27cc165e9cfe24dadaff0821951900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82e06a43b6fd82b04061134d43ef366') in 0.016526 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/tree_default_dark.fbx
+  artifactKey: Guid(444518a909993984d958b9ea1a6e9c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/tree_default_dark.fbx using Guid(444518a909993984d958b9ea1a6e9c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9961600e827fb4c352d938116fa053bf') in 0.021938 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/tree_detailed.fbx
+  artifactKey: Guid(c0235be6b5ccbb14bbe841d921e60f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/tree_detailed.fbx using Guid(c0235be6b5ccbb14bbe841d921e60f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51cc5e9f59f0d0466ab92f7cf8e371eb') in 0.021325 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Map Assets/kenney_conveyor-kit/Models/OBJ format/top-large.obj
+  artifactKey: Guid(62b5dab681c4efa4c9551eac82022f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_conveyor-kit/Models/OBJ format/top-large.obj using Guid(62b5dab681c4efa4c9551eac82022f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fbc1e4b2e45c184775b2063e222db7a') in 0.016516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/DAE format/tree_cone_fall.dae
+  artifactKey: Guid(71c0ab69ba500d44080fefecbab24968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/DAE format/tree_cone_fall.dae using Guid(71c0ab69ba500d44080fefecbab24968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47cce445cdb944ea067acef90b4837ff') in 0.018828 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/OBJ format/tree_blocks.obj
+  artifactKey: Guid(662d15d4af0a1094698277191e3401cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/OBJ format/tree_blocks.obj using Guid(662d15d4af0a1094698277191e3401cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d944d8dcca24b608bea7aacb7c1740') in 0.023429 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/DAE format/tree_default_dark.dae
+  artifactKey: Guid(ab3eded19810f6443a4cac46f1cd89d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/DAE format/tree_default_dark.dae using Guid(ab3eded19810f6443a4cac46f1cd89d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e35a8e4436356633c36f57d68168730b') in 0.021869 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/DAE format/tree_cone.dae
+  artifactKey: Guid(6510a162f9d5f8343b149193ed156780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/DAE format/tree_cone.dae using Guid(6510a162f9d5f8343b149193ed156780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af98390c55117c5911d28e2d82c4b552') in 0.016908 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/OBJ format/tree_default_dark.obj
+  artifactKey: Guid(ea40abc865fe66a4085cff73d060d82e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/OBJ format/tree_default_dark.obj using Guid(ea40abc865fe66a4085cff73d060d82e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e51d05b9382a43d54f0f64c4eea5fa3c') in 0.023732 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/DAE format/tree_default_fall.dae
+  artifactKey: Guid(503fe9ee93ebce74aa2f82e56151c517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/DAE format/tree_default_fall.dae using Guid(503fe9ee93ebce74aa2f82e56151c517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c27e0caf9fa0592824c574a3ace79522') in 0.019000 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/DAE format/tree_detailed_dark.dae
+  artifactKey: Guid(a5c677542c9e2de448cadea76b4bf473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/DAE format/tree_detailed_dark.dae using Guid(a5c677542c9e2de448cadea76b4bf473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8599cdc3b1539de59462b3ee458186b0') in 0.021767 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/OBJ format/tree_detailed.obj
+  artifactKey: Guid(9370ba34dc7711c4f8b09f394a869ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/OBJ format/tree_detailed.obj using Guid(9370ba34dc7711c4f8b09f394a869ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b0762cf719c6f2b7a45f2820632abcf') in 0.023957 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/tent_smallOpen.fbx
+  artifactKey: Guid(32c115c75270b6e47ba0eeb22e9f4fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/tent_smallOpen.fbx using Guid(32c115c75270b6e47ba0eeb22e9f4fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab591921903b38980e2956872d8ae1b0') in 0.022012 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/tree_cone_fall.fbx
+  artifactKey: Guid(e4cb5be43c69c2842a7136679fce3bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/tree_cone_fall.fbx using Guid(e4cb5be43c69c2842a7136679fce3bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09fc6b7a295782c7467619e1ab48df79') in 0.020325 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/tree_blocks_fall.fbx
+  artifactKey: Guid(8894fb75823418c48857ff4bdf917471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/tree_blocks_fall.fbx using Guid(8894fb75823418c48857ff4bdf917471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f15c1927d5c4b4dcfc894b4ef502e375') in 0.019030 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/FBX format/tree_default.fbx
+  artifactKey: Guid(082a4e8d8d920ad4a8913d1c3df96e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/FBX format/tree_default.fbx using Guid(082a4e8d8d920ad4a8913d1c3df96e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8e8e6b6dbb7157ec942249470ba197e') in 0.022534 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/OBJ format/tree_default_fall.obj
+  artifactKey: Guid(0590ee1843fe2004486ea8612a8f9697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/OBJ format/tree_default_fall.obj using Guid(0590ee1843fe2004486ea8612a8f9697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '925e80d6b580559b27115dfb6d9a2c09') in 0.023727 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/DAE format/tree_detailed.dae
+  artifactKey: Guid(0433eaf32be344d4a945fac7363639f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/DAE format/tree_detailed.dae using Guid(0433eaf32be344d4a945fac7363639f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae6a9caaa5c8885b7d3317bb3e29b04') in 0.024216 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Map Assets/kenney_nature-kit/Models/OBJ format/tree_cone_dark.obj
+  artifactKey: Guid(ad2f6faa2b2334d4abfb04d306ac469d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_nature-kit/Models/OBJ format/tree_cone_dark.obj using Guid(ad2f6faa2b2334d4abfb04d306ac469d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff41c27742698c95d1c4974ddeab20e3') in 0.023967 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Map Assets/kenney_conveyor-kit/Models/FBX format/top-large.fbx
+  artifactKey: Guid(55dc6ab687ebdac47b7d412ca8d59873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map Assets/kenney_conveyor-kit/Models/FBX format/top-large.fbx using Guid(55dc6ab687ebdac47b7d412ca8d59873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2ce18d80212081a4cfd2517f58ffe90') in 0.017144 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.478 seconds
+Refreshing native plugins compatible for Editor in 4.23 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.123 seconds
+Domain Reload Profiling: 1596ms
+	BeginReloadAssembly (163ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (236ms)
+		LoadAssemblies (320ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1124ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (504ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (355ms)
+			ProcessInitializeOnLoadMethodAttributes (21ms)
+			AfterProcessingInitializeOnLoad (18ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 4.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3984 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (79.4 KB). Loaded Objects now: 4564.
+Memory consumption went from 159.0 MB to 158.9 MB.
+Total: 2.895600 ms (FindLiveObjects: 0.245500 ms CreateObjectMapping: 0.089700 ms MarkObjects: 2.468700 ms  DeleteObjects: 0.091200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

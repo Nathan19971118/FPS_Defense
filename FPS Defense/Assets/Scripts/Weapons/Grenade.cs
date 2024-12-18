@@ -22,6 +22,9 @@ public class Grenade : MonoBehaviour
         meshObject.SetActive(false);
         effectObject.SetActive(true);
 
+        yield return new WaitForSeconds(3f);
+        Destroy(gameObject);
+
         RaycastHit[] ratHits = Physics.SphereCastAll(transform.position, explosionRadius, Vector3.up, 0f, LayerMask.GetMask("Enemy"));
 
         foreach (RaycastHit hitObject in ratHits)
