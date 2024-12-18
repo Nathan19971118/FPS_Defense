@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: GameObject Brush
   m_EditorClassIdentifier: 
   m_Cells:
-  - m_GameObject: {fileID: 919132149155446097, guid: 5a734b23d8a482542b3cd362001958c5, type: 3}
-    m_Offset: {x: 0, y: 1, z: 0}
+  - m_GameObject: {fileID: 5360208117612016680, guid: 7a600800299fde44aa6320387cb1fb2e, type: 3}
+    m_Offset: {x: 0, y: 0, z: 0}
     m_Scale: {x: 1, y: 1, z: 1}
     m_Orientation: {x: 0, y: 0, z: 0, w: 1}
   m_Size: {x: 1, y: 1, z: 1}
