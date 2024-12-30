@@ -71,3 +71,4 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Temp/UnityLockfile
+FPS Defense/Library/PackageCache/com.unity.burst@1.8.13/.Runtime/libburst-llvm-16.dylib
