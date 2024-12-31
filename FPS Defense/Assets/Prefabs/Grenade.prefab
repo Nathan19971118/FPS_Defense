@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3690189774192100457}
   - component: {fileID: 7255707830511969098}
   - component: {fileID: 6168611953128080821}
-  - component: {fileID: 1165718029937554147}
+  - component: {fileID: 2669078203256615057}
   m_Layer: 0
   m_Name: Grenade
   m_TagString: Untagged
@@ -78,8 +78,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1165718029937554147
-CapsuleCollider:
+--- !u!64 &2669078203256615057
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96,11 +96,10 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.012
-  m_Height: 0.07
-  m_Direction: 2
-  m_Center: {x: 0, y: 0, z: -0.002}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &3739915899339114810
 PrefabInstance:
   m_ObjectHideFlags: 0
