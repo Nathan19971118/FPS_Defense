@@ -15,7 +15,7 @@ D:/Unity/GitHub/FPS_Defense/FPS Defense
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-50351
+54229
 Successfully changed project path to: D:/Unity/GitHub/FPS_Defense/FPS Defense
 D:/Unity/GitHub/FPS_Defense/FPS Defense
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ D:/Unity/GitHub/FPS_Defense/FPS Defense
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [26596] Host "[IP] 169.254.11.210 [Port] 0 [Flags] 2 [Guid] 4035194162 [EditorId] 4035194162 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IKSH7C5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [23296] Host "[IP] 169.254.11.210 [Port] 0 [Flags] 2 [Guid] 546362882 [EditorId] 546362882 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IKSH7C5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [26596] Host "[IP] 169.254.11.210 [Port] 0 [Flags] 2 [Guid] 4035194162 [EditorId] 4035194162 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IKSH7C5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [23296] Host "[IP] 169.254.11.210 [Port] 0 [Flags] 2 [Guid] 546362882 [EditorId] 546362882 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IKSH7C5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 15.05 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 319.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.29f1 (8d510ca76d2b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.29f1/Editor/Data/Resources/UnitySubsystems
@@ -70,49 +70,49 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.29f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.29f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.29f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56984
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56864
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.29f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.29f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.29f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.023000 seconds.
-- Loaded All Assemblies, in  0.361 seconds
+Registered in 0.026018 seconds.
+- Loaded All Assemblies, in  1.954 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 376 ms
+Android Extension - Scanning For ADB Devices 437 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.634 seconds
-Domain Reload Profiling: 991ms
-	BeginReloadAssembly (120ms)
+- Finished resetting the current domain, in  0.752 seconds
+Domain Reload Profiling: 2702ms
+	BeginReloadAssembly (1435ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (77ms)
-	LoadAllAssembliesAndSetupDomain (124ms)
-		LoadAssemblies (117ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (80ms)
+	LoadAllAssembliesAndSetupDomain (392ms)
+		LoadAssemblies (1432ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (120ms)
-			TypeCache.Refresh (119ms)
-				TypeCache.ScanAssembly (106ms)
+		AnalyzeDomain (388ms)
+			TypeCache.Refresh (387ms)
+				TypeCache.ScanAssembly (236ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (634ms)
+	FinalizeReload (753ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (592ms)
+		SetupLoadedEditorAssemblies (708ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (464ms)
+			InitializePlatformSupportModulesInManaged (537ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (86ms)
-			ProcessInitializeOnLoadMethodAttributes (38ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (113ms)
+			ProcessInitializeOnLoadMethodAttributes (53ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -120,53 +120,53 @@ Domain Reload Profiling: 991ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.747 seconds
-Refreshing native plugins compatible for Editor in 4.05 ms, found 3 plugins.
+- Loaded All Assemblies, in  2.375 seconds
+Refreshing native plugins compatible for Editor in 4.28 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.728 seconds
-Domain Reload Profiling: 1471ms
-	BeginReloadAssembly (147ms)
+- Finished resetting the current domain, in  0.793 seconds
+Domain Reload Profiling: 3163ms
+	BeginReloadAssembly (160ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (17ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (41ms)
-	LoadAllAssembliesAndSetupDomain (521ms)
-		LoadAssemblies (388ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (2128ms)
+		LoadAssemblies (1580ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (232ms)
-			TypeCache.Refresh (198ms)
-				TypeCache.ScanAssembly (183ms)
-			ScanForSourceGeneratedMonoScriptInfo (24ms)
+		AnalyzeDomain (657ms)
+			TypeCache.Refresh (616ms)
+				TypeCache.ScanAssembly (559ms)
+			ScanForSourceGeneratedMonoScriptInfo (31ms)
 			ResolveRequiredComponents (8ms)
-	FinalizeReload (729ms)
+	FinalizeReload (794ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (574ms)
+		SetupLoadedEditorAssemblies (624ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (27ms)
-			SetLoadedEditorAssemblies (2ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (79ms)
-			ProcessInitializeOnLoadAttributes (422ms)
-			ProcessInitializeOnLoadMethodAttributes (29ms)
-			AfterProcessingInitializeOnLoad (15ms)
+			BeforeProcessingInitializeOnLoad (81ms)
+			ProcessInitializeOnLoadAttributes (458ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
+			AfterProcessingInitializeOnLoad (18ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 4.36 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 4.74 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7716 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 257 unused Assets / (13.9 MB). Loaded Objects now: 8081.
-Memory consumption went from 359.5 MB to 345.6 MB.
-Total: 5.546500 ms (FindLiveObjects: 0.439600 ms CreateObjectMapping: 0.411800 ms MarkObjects: 2.448000 ms  DeleteObjects: 2.246500 ms)
+Unloading 257 unused Assets / (13.9 MB). Loaded Objects now: 8082.
+Memory consumption went from 359.7 MB to 345.8 MB.
+Total: 6.450000 ms (FindLiveObjects: 0.468800 ms CreateObjectMapping: 0.213100 ms MarkObjects: 2.825000 ms  DeleteObjects: 2.942200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -181,6 +181,70 @@ AssetImportParameters requested are different than current active one (requested
   custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 490125.747288 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Grass_C.prefab
+  artifactKey: Guid(4c72217d56dcb6749a897a75cad1f34e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Grass_C.prefab using Guid(4c72217d56dcb6749a897a75cad1f34e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a2c25d5f37dfc18d0357568652cbc5f') in 1.691157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/FireArm Assets/Low Poly ShotGun Weapon Pack 1/Models/Attachments/Accessories/Light_A_Left.fbx
+  artifactKey: Guid(10749cc363a9f764c968bf28e522d6e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FireArm Assets/Low Poly ShotGun Weapon Pack 1/Models/Attachments/Accessories/Light_A_Left.fbx using Guid(10749cc363a9f764c968bf28e522d6e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c82d304d41adb0c90fc36641a9584d7') in 0.048877 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/FireArm Assets/Low-Poly AR Weapon Pack 1/Models/Attachments/UnderBarrels/ForwardGrip_C.fbx
+  artifactKey: Guid(1997a7e417ac42d40b364ce660837ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FireArm Assets/Low-Poly AR Weapon Pack 1/Models/Attachments/UnderBarrels/ForwardGrip_C.fbx using Guid(1997a7e417ac42d40b364ce660837ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '046b70c9d8d04bba9759db8095416b05') in 0.049225 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/GrassDry_A.prefab
+  artifactKey: Guid(9e8508e3025d9c844810b83c5607c09e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/GrassDry_A.prefab using Guid(9e8508e3025d9c844810b83c5607c09e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a6bfdeceed783c81546804739c9e7d') in 0.218748 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/FireArm Assets/Low Poly ShotGun Weapon Pack 1/Prefabs/Attachments/Accessories/Light_A_Left.prefab
+  artifactKey: Guid(c9c357ca447fbe64ea3868a80ca045fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FireArm Assets/Low Poly ShotGun Weapon Pack 1/Prefabs/Attachments/Accessories/Light_A_Left.prefab using Guid(c9c357ca447fbe64ea3868a80ca045fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c75616758555e0a2acbfab1e28085139') in 0.012532 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/FireArm Assets/Low Poly ShotGun Weapon Pack 1/Models/Attachments/UnderBarrels/ForwardGrip_C.fbx
+  artifactKey: Guid(c83221ac09e5cf94fbf2aca59c18f55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FireArm Assets/Low Poly ShotGun Weapon Pack 1/Models/Attachments/UnderBarrels/ForwardGrip_C.fbx using Guid(c83221ac09e5cf94fbf2aca59c18f55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e565cdd48c7b9b8949668171f9e5cc5') in 0.012164 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/FireArm Assets/Low-Poly AR Weapon Pack 1/Models/Attachments/UnderBarrels/ForwardGrip_A.fbx
+  artifactKey: Guid(e9646c57067628f4a94a49221ef2c349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FireArm Assets/Low-Poly AR Weapon Pack 1/Models/Attachments/UnderBarrels/ForwardGrip_A.fbx using Guid(e9646c57067628f4a94a49221ef2c349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc4d54fde6d833ea5fb0421e50c9b500') in 0.074000 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Turret & trap Asset/GatelngGunTurret.fbx
+  artifactKey: Guid(d4db5f377242c0c41829fc2241aa2a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turret & trap Asset/GatelngGunTurret.fbx using Guid(d4db5f377242c0c41829fc2241aa2a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fa4dcd834016f3a0866905853cdc8a7') in 0.153876 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 45
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server
