@@ -59,7 +59,7 @@ public class WeaponController : MonoBehaviour
 
     [Header("Shooting")]
     public bool isShooting;
-    public float damage;
+    public int damage;
     public float range = 100f;
     public float fireRate;
     private float nextTimeToFire = 0f;
