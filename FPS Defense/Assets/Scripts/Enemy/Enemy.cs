@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -9,138 +10,69 @@ public class Enemy : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
     public int point;
-    public Transform target;
+    //public Transform target;
     public bool isChase;
     public bool isAttack;
     public bool isDead;
 
-    [Header("Reference")]
-    public Rigidbody rigidBody;
-    public BoxCollider boxCollider;
-    public BoxCollider meleeArea;
-    public GameObject bullet;
-    public MeshRenderer[] meshs;
-    public NavMeshAgent nav;
-    //public Animator animator;
+    public List<Transform> waypoints = new List<Transform>();
+    private Transform targetWaypoint;
+    private int targetWaypointIndex = 0;
+    private float minDistance = 0.1f;
+    private int lastWaypointIndex;
 
-    private void Awake()
+    public float movementSpeed = 5.0f;
+    private float rotationSpeed = 2.0f;
+
+    private void Start()
     {
-        rigidBody = GetComponent<Rigidbody>();
-        boxCollider = GetComponent<BoxCollider>();
-        meshs = GetComponentsInChildren<MeshRenderer>();
-        nav = GetComponent<NavMeshAgent>();
-        //animator = GetComponentInChildren<Animator>();
+        currentHealth = maxHealth;
 
-        if (enemyType != Type.D)
-            Invoke("ChaseStart", 2);
-    }
-
-    void ChaseStart()
-    {
-        isChase = true;
-        //animator.SetBool("isWalk", true);
+        lastWaypointIndex = waypoints.Count - 1;
+        // Move to the first waypoint when the enemy spawn
+        targetWaypoint = waypoints[targetWaypointIndex];
     }
 
     private void Update()
     {
-        if (nav.enabled && enemyType != Type.D)
+        float movementStep = movementSpeed * Time.deltaTime;
+        float rotationStep = rotationSpeed * Time.deltaTime;
+
+        Vector3 directionToTarget = targetWaypoint.position - transform.position;
+        Quaternion rotationToTarget = Quaternion.LookRotation(directionToTarget);
+
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotationToTarget, rotationStep);
+
+        Debug.DrawRay(transform.position, transform.forward * 50f, Color.green, 0f);
+        Debug.DrawRay(transform.position, directionToTarget, Color.red, 0f);
+
+
+        float distance=Vector3.Distance(transform.position, targetWaypoint.position);
+        CheckDistanceToWaypoint(distance);
+
+        transform.position = Vector3.MoveTowards(transform.position, targetWaypoint.position, movementStep);
+
+        
+    }
+
+    private void CheckDistanceToWaypoint(float currentDistance)
+    {
+        if(currentDistance <= minDistance)
         {
-            nav.SetDestination(target.position);
-            nav.isStopped = !isChase;
+            targetWaypointIndex++;
+            UpdateTargetWaypoint();
         }
     }
 
-    void FreezeVelocity()
+    private void UpdateTargetWaypoint()
     {
-        if (isChase)
+        // This code should be changed(When the enemy reached to the last waypoint(Base), it should start attack the base)
+        if (targetWaypointIndex > lastWaypointIndex)
         {
-            rigidBody.velocity = Vector3.zero;
-            rigidBody.angularVelocity = Vector3.zero;
-        }
-    }
-
-    void Targeting()
-    {
-        if (!isDead && enemyType != Type.D)
-        {
-            float targetRadius = 0;
-            float targetRange = 0;
-
-            switch (enemyType)
-            {
-                case Type.A:
-                    targetRadius = 1.5f;
-                    targetRange = 3f;
-                    break;
-                case Type.B:
-                    targetRadius = 1f;
-                    targetRange = 12f;
-                    break;
-                case Type.C:
-                    targetRadius = 0.5f;
-                    targetRange = 25f;
-                    break;
-            }
-
-            RaycastHit[] rayHits =
-                 Physics.SphereCastAll(transform.position,
-                                       targetRadius, transform.forward,
-                                       targetRange,
-                                       LayerMask.GetMask("Player"));
-            if (rayHits.Length > 0 && !isAttack)
-            {
-                StartCoroutine("Attack");
-            }
-        }
-    }
-
-    IEnumerator Attack()
-    {
-        isChase = false;
-        isAttack = true;
-        //animator.SetBool("isAttack", true);
-
-        switch (enemyType)
-        {
-            case Type.A:
-                yield return new WaitForSeconds(0.2f);
-                meleeArea.enabled = true;
-
-                yield return new WaitForSeconds(1f);
-                meleeArea.enabled = false;
-
-                yield return new WaitForSeconds(1f);
-                break;
-            case Type.B:
-                yield return new WaitForSeconds(0.1f);
-                rigidBody.AddForce(transform.forward * 20, ForceMode.Impulse);
-                meleeArea.enabled = true;
-
-                yield return new WaitForSeconds(0.5f);
-                rigidBody.velocity = Vector3.zero;
-                meleeArea.enabled = false;
-
-                yield return new WaitForSeconds(2f);
-                break;
-            case Type.C:
-                yield return new WaitForSeconds(0.5f);
-                GameObject instantBullet = Instantiate(bullet, transform.position, transform.rotation);
-                Rigidbody rigidBullet = instantBullet.GetComponent<Rigidbody>();
-                rigidBullet.velocity = transform.forward * 20;
-
-                yield return new WaitForSeconds(2f);
-                break;
+            targetWaypointIndex = 0;
         }
 
-        isChase = true;
-        isAttack = false;
-        //animator.SetBool("isAttack", false);
-    }
-
-    void FixedUpdate()
-    {
-        Targeting();
-        FreezeVelocity();
+        targetWaypoint = waypoints[targetWaypointIndex];
     }
 
     public void TakeDamage(int amount, bool isGrenade)
