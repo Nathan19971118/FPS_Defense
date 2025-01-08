@@ -70,7 +70,6 @@ public class PlayerController : MonoBehaviour
     public int weaponIndicator;
     public GameObject[] weapons = new GameObject[3];
 
-    /*
     [Header("Leaning")]
     public Transform leanPivot;
     private float currentLean; // Actual value of the lean
@@ -78,10 +77,9 @@ public class PlayerController : MonoBehaviour
     public float leanAngle;
     public float leanSmoothing;
     private float leanVelocity;
-    */
 
-    //private bool isLeaningLeft;
-    //private bool isLeaningRight;
+    private bool isLeaningLeft;
+    private bool isLeaningRight;
 
     [Header("Aiming In")]
     public bool isAimingIn;
@@ -118,7 +116,7 @@ public class PlayerController : MonoBehaviour
         CalculateMovement();
         CalculateJump();
         CalculateStance();
-        //CalculateLeaning();
+        CalculateLeaning();
         CalculateAimingIn();
     }
 
@@ -161,11 +159,11 @@ public class PlayerController : MonoBehaviour
         //defaultInput.Player.WeaponSwap.performed += e => SwitchWeapons((weaponIndicator < 2) ? weaponIndicator + 1 : 0);
 
         // Lean
-        //defaultInput.Player.LeanRightPressed.performed += e => isLeaningRight = true;
-        //defaultInput.Player.LeanRightReleased.performed += e => isLeaningRight = false;
+        defaultInput.Player.LeanRightPressed.performed += e => isLeaningRight = true;
+        defaultInput.Player.LeanRightReleased.performed += e => isLeaningRight = false;
 
-        //defaultInput.Player.LeanLeftPressed.performed += e => isLeaningLeft = true;
-        //defaultInput.Player.LeanLeftReleased.performed += e => isLeaningLeft = false;
+        defaultInput.Player.LeanLeftPressed.performed += e => isLeaningLeft = true;
+        defaultInput.Player.LeanLeftReleased.performed += e => isLeaningLeft = false;
 
         // Weapon input
         defaultInput.Weapon.Fire2Pressed.performed += e => AimingInPressed();
@@ -307,7 +305,6 @@ public class PlayerController : MonoBehaviour
 
     #region - Leaning -
 
-    /*
     private void CalculateLeaning()
     {
         if (isLeaningLeft)
@@ -327,7 +324,6 @@ public class PlayerController : MonoBehaviour
 
         leanPivot.localRotation = Quaternion.Euler(new Vector3(0, 0, currentLean));
     }
-    */
 
     #endregion
 

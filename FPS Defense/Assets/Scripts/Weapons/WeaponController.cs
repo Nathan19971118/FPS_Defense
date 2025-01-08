@@ -111,14 +111,14 @@ public class WeaponController : MonoBehaviour
     {
         if (currentAmmo > 0)
         {
-            if (isShooting && currentFireType == WeaponFireType.SemiAuto)
+            if (!playerController.isSprint && isShooting && currentFireType == WeaponFireType.SemiAuto)
             {
                 Shoot();
                 currentAmmo--;
                 isShooting = false;
             }
 
-            if (isShooting && currentFireType == WeaponFireType.FullyAuto && Time.time >= nextTimeToFire)
+            if (!playerController.isSprint && isShooting && currentFireType == WeaponFireType.FullyAuto && Time.time >= nextTimeToFire)
             {
                 nextTimeToFire = Time.time + 1f / fireRate;
                 Shoot();
@@ -128,7 +128,7 @@ public class WeaponController : MonoBehaviour
 
         if (grenadeCurrentAmmo > 0)
         {
-            if (isShooting && currentFireType == WeaponFireType.GrenadeLauncher)
+            if (!playerController.isSprint && isShooting && currentFireType == WeaponFireType.GrenadeLauncher)
             {
                 ShootGrenade();
                 grenadeCurrentAmmo--;
