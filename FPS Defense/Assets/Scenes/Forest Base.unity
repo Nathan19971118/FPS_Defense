@@ -190,6 +190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -295,6 +299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -367,6 +375,10 @@ PrefabInstance:
     - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_Name
       value: SandBagWall_04_v2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -476,6 +488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -495,7 +511,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 136501724}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Vehicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,6 +631,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -688,6 +708,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagWall_04_v2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -702,7 +726,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 189747951}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Z+
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -988,6 +1012,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1098,6 +1126,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagWall_04_v2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1176,6 +1208,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagWall_04_v2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1190,7 +1226,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 437148078}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: X+
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1288,6 +1324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1370,6 +1410,10 @@ PrefabInstance:
     - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1469,6 +1513,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagWall_04_v2
       objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1483,7 +1531,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 538268748}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: X-
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1608,6 +1656,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1681,6 +1733,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagWall_04_v2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1753,6 +1809,10 @@ PrefabInstance:
     - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1831,6 +1891,10 @@ PrefabInstance:
     - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_Name
       value: SandBagWall_04_v2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1969,6 +2033,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2042,6 +2110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2114,6 +2186,10 @@ PrefabInstance:
     - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2197,6 +2273,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f5f4d7be55b6c094395c7d1d2926cf3e, type: 3}
       propertyPath: m_Name
       value: Jeep
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f5f4d7be55b6c094395c7d1d2926cf3e, type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2283,6 +2363,10 @@ PrefabInstance:
     - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_Name
       value: SandBagWall_04_v2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2383,6 +2467,10 @@ PrefabInstance:
     - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2556,6 +2644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2575,7 +2667,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 808346639}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Z+
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2696,6 +2788,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2710,7 +2806,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 845327688}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Sand Bags
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2791,6 +2887,10 @@ PrefabInstance:
       value: MilitaryTent
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 24f13783e61c61b48976b1ac683ae102, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 24f13783e61c61b48976b1ac683ae102, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -2816,7 +2916,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 891642661}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Z-
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2910,6 +3010,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagWall_04_v2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2982,6 +3086,10 @@ PrefabInstance:
     - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3066,11 +3174,134 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagWall_04_v2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+--- !u!1 &958102409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 958102413}
+  - component: {fileID: 958102412}
+  - component: {fileID: 958102411}
+  - component: {fileID: 958102410}
+  m_Layer: 0
+  m_Name: AI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &958102410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958102409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  target: {fileID: 681491373}
+--- !u!114 &958102411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958102409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+  radius: 0.5
+  height: 2
+  canMove: 1
+  maxSpeed: 1
+  gravity: {x: NaN, y: NaN, z: NaN}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  centerOffsetCompatibility: NaN
+  repathRateCompatibility: NaN
+  canSearchCompability: 0
+  orientation: 0
+  enableRotation: 1
+  autoRepath:
+    mode: 2
+    interval: 0.5
+    sensitivity: 10
+    maximumInterval: 2
+    visualizeSensitivity: 0
+  targetCompatibility: {fileID: 0}
+  maxAcceleration: -2.5
+  rotationSpeed: 360
+  slowdownDistance: 0.6
+  pickNextWaypointDist: 2
+  endReachedDistance: 0.2
+  alwaysDrawGizmos: 0
+  slowWhenNotFacingTarget: 1
+  whenCloseToDestination: 0
+  constrainInsideGraph: 0
+--- !u!114 &958102412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958102409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
+--- !u!4 &958102413
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958102409}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1093.9, y: 3.693, z: 758.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1133372378}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &977426092 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2384229939999654179, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
@@ -3144,11 +3375,76 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+--- !u!1001 &993068981
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 958102413}
+    m_Modifications:
+    - target: {fileID: 328409505970683906, guid: 464cc7c4f7ea10b47a36d7848aa9ca9a, type: 3}
+      propertyPath: m_Name
+      value: Enemy A
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462523135328065168, guid: 464cc7c4f7ea10b47a36d7848aa9ca9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462523135328065168, guid: 464cc7c4f7ea10b47a36d7848aa9ca9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462523135328065168, guid: 464cc7c4f7ea10b47a36d7848aa9ca9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462523135328065168, guid: 464cc7c4f7ea10b47a36d7848aa9ca9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462523135328065168, guid: 464cc7c4f7ea10b47a36d7848aa9ca9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462523135328065168, guid: 464cc7c4f7ea10b47a36d7848aa9ca9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462523135328065168, guid: 464cc7c4f7ea10b47a36d7848aa9ca9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462523135328065168, guid: 464cc7c4f7ea10b47a36d7848aa9ca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462523135328065168, guid: 464cc7c4f7ea10b47a36d7848aa9ca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462523135328065168, guid: 464cc7c4f7ea10b47a36d7848aa9ca9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462523135328065168, guid: 464cc7c4f7ea10b47a36d7848aa9ca9a, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 464cc7c4f7ea10b47a36d7848aa9ca9a, type: 3}
 --- !u!1001 &996600519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3216,6 +3512,10 @@ PrefabInstance:
     - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_Name
       value: SandBagWall_04_v2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3289,6 +3589,10 @@ PrefabInstance:
     - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3373,6 +3677,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3445,6 +3753,10 @@ PrefabInstance:
     - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3519,6 +3831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3592,6 +3908,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagWall_04_v2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3606,7 +3926,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1132584514}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3636,6 +3956,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2739574995243696385, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
   m_PrefabInstance: {fileID: 1291828210}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1133372378 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4462523135328065168, guid: 464cc7c4f7ea10b47a36d7848aa9ca9a, type: 3}
+  m_PrefabInstance: {fileID: 993068981}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1260510217 stripped
 Transform:
@@ -3714,6 +4039,10 @@ PrefabInstance:
     - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3830,6 +4159,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3854,7 +4187,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1387542145}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: X-
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3948,6 +4281,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagWall_04_v2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4025,6 +4362,10 @@ PrefabInstance:
     - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_Name
       value: SandBagWall_04_v2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4150,6 +4491,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4222,6 +4567,10 @@ PrefabInstance:
     - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_Name
       value: SandBagWall_04_v2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4301,6 +4650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4379,6 +4732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4451,6 +4808,10 @@ PrefabInstance:
     - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4525,6 +4886,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AmbulanceCar
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dc4f5914f1a31274b996681d64ff0de7, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4547,7 +4912,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1705318993}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: X+
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4641,6 +5006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4718,6 +5087,10 @@ PrefabInstance:
     - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_Name
       value: SandBagWall_04_v2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4820,9 +5193,49 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -8119359955621855258, guid: 55e19b9ef34165347b9cea9b8f42538d, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -7493517107185381795, guid: 55e19b9ef34165347b9cea9b8f42538d, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -7272911518199237601, guid: 55e19b9ef34165347b9cea9b8f42538d, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -5756509958616141889, guid: 55e19b9ef34165347b9cea9b8f42538d, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -5508998906628186352, guid: 55e19b9ef34165347b9cea9b8f42538d, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -3548339447965104835, guid: 55e19b9ef34165347b9cea9b8f42538d, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 55e19b9ef34165347b9cea9b8f42538d, type: 3}
       propertyPath: m_Name
       value: m939Truck
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 55e19b9ef34165347b9cea9b8f42538d, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562351888521552391, guid: 55e19b9ef34165347b9cea9b8f42538d, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517675856834624919, guid: 55e19b9ef34165347b9cea9b8f42538d, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488431008810829073, guid: 55e19b9ef34165347b9cea9b8f42538d, type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4921,6 +5334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4954,7 +5371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1360319523489636166, guid: 5c0e6a60437f81b438bbd26a57c035a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 750
+      value: 757
       objectReference: {fileID: 0}
     - target: {fileID: 1360319523489636166, guid: 5c0e6a60437f81b438bbd26a57c035a0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4987,6 +5404,10 @@ PrefabInstance:
     - target: {fileID: 2694499033523038766, guid: 5c0e6a60437f81b438bbd26a57c035a0, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2694499033523038766, guid: 5c0e6a60437f81b438bbd26a57c035a0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5061,6 +5482,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5097,7 +5522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAABIIex3H8KNSQIAAAsFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGFVMuS2jAQ/BVK52wKsxA2uSWGZXNgoZak9uKLsMa2Clly6cGz+PeMZBt7SVVywnT3zPQ87Avh0lSQWqUXmrOlYkC+DYh/Jp8GHfkCR5orueFnaDXvnNnCi2jQvFHLFeKRDzOqBKt5+l3mwouHCDrJM6XLOcshVsYahDMqDCCllfXREqHLgBybgFPze/a/gys+pSAt6P+pnEwFLStg3m0njlp1VMsk9tEovOdUCcFNY4LYUxWajGllHLaAAsYpNhXKe30BPC8s/hn1g1dZZsA2ljQ9zbjG2dRZyQ9VD6ykZlf72lPh4Ga8Trn8i32IAp1pVb60VaOhr2ALnu7e6Cmlxvbm2YdnH207eaBiR7cC3guQr2qhlZMMSaudD3UGRrNeqltncQHprtPVXu9AV/1zN9fQ+zEWvNx65PO4BjZChWl/9VrQuJefaDhchGkyIOpN/Dbwi+b902mIZ66NRarpUnp3W+W0l5J5mJlvxtlYaQkBbjxXIKmwpzWmsfcLvON6Ze+YZ+pfkqZ4w7W3fxcS4E4/HN5Ra3W4LcsU6rAEU6ycFVxCZ9oTrzinWElZ31d/Jm3YxumMpr2w3HH28bQIRIw9ZXQ0fJw+wmS8fZgO00n2NJqM2TT7MppOSLg9LrFPKta10WY8uDXZJZd4Z+23Y7DQtAq3zjQ9LPi5VL2Rc5mpTaoB5KrOcDMOGovgO8nmjOOANmAtl2Hf5JIQodIdsOSWKAmdzo9W06TLkpCK75X1SELi8MVIiIdvp7zWsOdw8MXbZFdy/QNQSwMEFAAACAgAAEgh7HDuXDNtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tFKqYUqKRVqikYGxuXGqqUmSrrlBsmmahZGpSYp5mpmRualSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAEgh7Hcfwo1JAgAACwUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAEgh7HDuXDNtAAAAeAAAAAkAJAAAAAAAAAAAAAAAlgIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABOAwAAAAA=
+    dataString: UEsDBBQAAAgIAABIIewl8DxBVAIAABMFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMlu2zAQ/RWD57awnLhOemsVx+nBiRG3yEUXWhxZhClS4OIlgf+9Q4paqpxEvXkz82YhPwiXpobcKr3SnK0VA/JjQvyZfJn0xic4072SW/4OLeeNM1t6Eg2cV2q5QjzxbkZVYDXPf8q98OQpgk7yQulqyfaQKmMNwgUVBtCklfXeEqGPCTlHh0v8vvvv5IqnHKQF3bMW8zEPkcB0Mhe0qoF5xQOHaeuAp0CUWE3keOW5EoKbKIXYSx1KTWltHBaCBMYplhZEzPC3BL4vbfzpnF+KwoCNsjS9PHCNHWqikl+qaVtFzaFRdqTCQVdkE3L9yXqX3CeBUGhVPbV5k1CRLXl+eKWXnBo76OsQfuiFJ6FBJyoOdCfgrQT5rFZaOcnQaLXzrs7A7GEQqqstLSE/9LxG7Qh09edJJv0kr6H6cyp4tfPIt9sG2AoV+n3vfUDjZH6j4LAZJkZC1Iv4a+AP3Q9XKBoeuTYWTTGh9Op2ymlPJcvQM1+Ms6nSEgIcNdcgqbCXDYax4xGObIO0I8sj9ZclJo+29g6MXALc86fTkWmjTt2wTKlOazDli7OCS+hFe8Mz9ilVUjYbNuxJ67Z1uqD5wG3vOPt/uQgkjN0VdDa9WdzA/Hb3dTHN58XdbH7LFsX32WJOwu5xiXVSsWmExvbg1GQfXOKetW/IZKVpHbadaXpa8fdKDVrOZaG2uQaQL02ETjhoTIK3ki0ZxwZtwVouw7zJR0aEyg/Asi5QFipdnq2mWR8lIzU/KuuRjKTh5ciIh7tV3mg4cjj55G2wK7n+A1BLAwQUAAAICAAASCHscO5cM20AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0UqphSopFWqKRgbG5caqpSZKuuUGyaZqFkalJinmamZG5qVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAASCHsJfA8QVQCAAATBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAASCHscO5cM20AAAB4AAAACQAkAAAAAAAAAAAAAAChAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAFkDAAAAAA==
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -5204,7 +5629,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2050136907}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Outer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5308,6 +5733,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5381,6 +5810,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarbedWireMetalFence_26_v1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3264894628783676347, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5405,7 +5838,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2116673739}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Z-
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5444,3 +5877,4 @@ SceneRoots:
   - {fileID: 1533452342}
   - {fileID: 79867314}
   - {fileID: 2031417636}
+  - {fileID: 958102413}

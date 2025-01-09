@@ -20,11 +20,11 @@ TagManager:
   - Grenade
   - Player
   - Floor
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Obstacles
+  - Target
+  - Fence
+  - Vehicle
+  - Sand Bags
   - 
   - 
   - 
