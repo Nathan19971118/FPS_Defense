@@ -1,3 +1,4 @@
+using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,10 @@ public class Enemy : MonoBehaviour
     public int point;
     public bool isDead;
 
+    private void Awake()
+    {
+
+    }
     private void Start()
     {
         currentHealth = maxHealth;
