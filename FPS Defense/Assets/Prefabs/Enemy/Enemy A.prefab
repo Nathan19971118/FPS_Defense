@@ -52,7 +52,8 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 100
   point: 100
-  target: {fileID: 0}
+  target: {fileID: -8679921383154817045, guid: 24f13783e61c61b48976b1ac683ae102, type: 3}
+  isChase: 0
   isDead: 0
 --- !u!65 &2499999627891173881
 BoxCollider:

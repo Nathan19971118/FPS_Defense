@@ -398,6 +398,7 @@
 "Assets/QuarterView 3D Action BE5/ReadMe/Scripts/ReadmeBE5.cs"
 "Assets/Scripts/Enemy/Enemy.cs"
 "Assets/Scripts/Enemy/EnemyBullet.cs"
+"Assets/Scripts/Enemy/EnemySpawner.cs"
 "Assets/Scripts/Models.cs"
 "Assets/Scripts/Player/PlayerController.cs"
 "Assets/Scripts/UI/UIManager.cs"

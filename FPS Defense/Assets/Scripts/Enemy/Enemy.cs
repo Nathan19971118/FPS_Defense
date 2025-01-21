@@ -96,4 +96,12 @@ public class Enemy : MonoBehaviour
         Vector3 reactVec = transform.position = explosionPosition;
         TakeDamage(currentHealth, true);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Target")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
