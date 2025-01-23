@@ -379,7 +379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyZones:
-  - {fileID: 1508273818}
+  - {fileID: 0}
   - {fileID: 495393593}
   - {fileID: 1437065924}
   - {fileID: 686209820}
