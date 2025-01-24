@@ -10,7 +10,7 @@ public class EnemySpawner : MonoBehaviour
     public class Wave
     {
         public string name;
-        public Transform[] enemies;
+        public Transform enemy;
         public int count;
         public float rate;
     }
@@ -18,15 +18,15 @@ public class EnemySpawner : MonoBehaviour
     public Wave[] waves;
     private int nextWave = 0;
 
+    public Transform[] spawnPoints;
+    public Transform[] enemies;
+
     public float timeBetweenWaves = 5f;
     public float waveCountdown;
 
-    private SpawnState state = SpawnState.COUNTING;
+    private float searchCountDown = 1f;
 
-    public Transform[] enemyZones;
-    public GameObject[] enemies;
-    public List<int> enemyList;
-    private int wave;
+    private SpawnState state = SpawnState.COUNTING;
 
     public GameObject tent;
 
@@ -38,19 +38,32 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        waveCountdown = timeBetweenWaves;
-
-        enemyZones = new Transform[enemyZones.Length];
-
-        for(int i = 0;i < enemyZones.Length; i++)
+        if (spawnPoints.Length == 0)
         {
-            enemyZones[i] = gameObject.transform;
+            Debug.LogError("No spawn points referenced.");
         }
+
+        waveCountdown = timeBetweenWaves;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (state == SpawnState.WAITING)
+        {
+            // Check if enemies are still alive
+            if (!EnemyIsAlive())
+            {
+                // Begin a new wave
+                WaveCompleted();
+                return;
+            }
+            else
+            {
+                return;
+            }
+        }
+
         if (waveCountdown <= 0)
         {
             if (state != SpawnState.SPAWNING)
@@ -64,11 +77,49 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
+    void WaveCompleted()
+    {
+        Debug.Log("Wave Completed");
+
+        state = SpawnState.COUNTING;
+        waveCountdown = timeBetweenWaves;
+
+        if (nextWave + 1 > waves.Length - 1)
+        {
+            nextWave = 0;
+            Debug.Log("ALL WAVES COMPLETE! Looping...");
+        }
+        else
+        {
+            nextWave++;
+        }
+    }
+
+    bool EnemyIsAlive()
+    {
+        searchCountDown -= Time.deltaTime;
+        if (searchCountDown <= 0f)
+        {
+            searchCountDown = 1f;
+            if (GameObject.FindGameObjectWithTag("Enemy") == null)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
     IEnumerator SpawnWave(Wave _wave)
     {
+        Debug.Log("Spawning Wave:" + _wave.name);
         state = SpawnState.SPAWNING;
 
         // Spawn
+        for (int i = 0; i < _wave.count; i++)
+        {
+            SpawnEnemy(_wave.enemy);
+            yield return new WaitForSeconds(1f / _wave.rate);
+        }
 
         state = SpawnState.WAITING;
 
@@ -76,39 +127,19 @@ public class EnemySpawner : MonoBehaviour
     }
 
 
-    private void SpawnEnemy()
+    private void SpawnEnemy(Transform _enemy)
     {
-        // Selecting a random enemy
-        int randomEnemy=Random.Range(0,enemies.Length);
-        Transform spawnPoints = enemyZones[Random.Range(0,enemyZones.Length)];
-        Instantiate(enemies[randomEnemy], spawnPoints.position, spawnPoints.rotation);
+        // Spawn enemy
+        Debug.Log("Spawning Enemy: " + _enemy.name);
+
+
+        // Selecting random enemy
+        //int randomEnemy = Random.Range(0, enemies.Length);
+        Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
+        Transform instantEnemy = Instantiate(_enemy, _sp.position, _sp.rotation);
+
+        // Set target to enemies
+        Enemy enemy = instantEnemy.GetComponent<Enemy>();
+        enemy.target = tent.transform;
     }
-
-    
-
-    /*
-    public void WaveStart()
-    {
-        StartCoroutine(InBattle());
-    }
-
-    IEnumerator InBattle()
-    {
-        for(int index = 0; index < wave ; index++)
-        {
-            int ran = Random.Range(0, enemies.Length);
-            enemyList.Add(ran);
-        }
-
-        while (enemyList.Count > 0)
-        {
-            int ranZone = Random.Range(0, 8);
-            GameObject instantEnemy = Instantiate(enemies[enemyList[0]], enemyZones[ranZone].position, enemyZones[ranZone].rotation);
-            Enemy enemy = instantEnemy.GetComponent<Enemy>();
-            enemy.target = tent.transform;
-            enemyList.RemoveAt(0);
-            yield return new WaitForSeconds(3f);
-        }
-    }
-    */
 }

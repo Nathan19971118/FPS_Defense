@@ -378,8 +378,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b989e58279eae34e93e215a2814e743, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyZones:
-  - {fileID: 0}
+  waves:
+  - name: Wave 1
+    enemy: {fileID: 538303059232808451, guid: cbf5e7201b364a345a30f1d4d5ecf547, type: 3}
+    count: 5
+    rate: 1
+  - name: Wave 2
+    enemy: {fileID: 838868314620702442, guid: d524fca22188d944098a37b9953feb18, type: 3}
+    count: 8
+    rate: 1.5
+  - name: Wave 3
+    enemy: {fileID: 838868314620702442, guid: 7d78641052bf2f542bb5089921a2a2b8, type: 3}
+    count: 10
+    rate: 2
+  spawnPoints:
+  - {fileID: 1508273818}
   - {fileID: 495393593}
   - {fileID: 1437065924}
   - {fileID: 686209820}
@@ -392,7 +405,8 @@ MonoBehaviour:
   - {fileID: 8100628135222361420, guid: cbf5e7201b364a345a30f1d4d5ecf547, type: 3}
   - {fileID: 5203074134354504419, guid: d524fca22188d944098a37b9953feb18, type: 3}
   - {fileID: 5203074134354504419, guid: 7d78641052bf2f542bb5089921a2a2b8, type: 3}
-  enemyList: 
+  timeBetweenWaves: 5
+  waveCountdown: -0.00426245
   tent: {fileID: 681491372}
 --- !u!1001 &64342961
 PrefabInstance:

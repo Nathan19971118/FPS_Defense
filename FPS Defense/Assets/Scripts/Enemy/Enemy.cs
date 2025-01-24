@@ -30,7 +30,8 @@ public class Enemy : MonoBehaviour
         nav = GetComponent<NavMeshAgent>();
         anim = GetComponentInChildren<Animator>();
 
-        Invoke("ChaseStart", 2);
+        ChaseStart();
+        //Invoke("ChaseStart", 2);
     }
 
     private void Start()
