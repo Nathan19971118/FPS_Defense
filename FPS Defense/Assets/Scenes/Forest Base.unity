@@ -389,7 +389,7 @@ MonoBehaviour:
     rate: 1.5
   - name: Wave 3
     enemy: {fileID: 838868314620702442, guid: 7d78641052bf2f542bb5089921a2a2b8, type: 3}
-    count: 10
+    count: 3
     rate: 2
   spawnPoints:
   - {fileID: 1508273818}

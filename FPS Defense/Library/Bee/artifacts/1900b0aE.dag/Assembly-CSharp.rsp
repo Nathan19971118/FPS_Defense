@@ -401,6 +401,7 @@
 "Assets/Scripts/Enemy/EnemySpawner.cs"
 "Assets/Scripts/Models.cs"
 "Assets/Scripts/Player/PlayerController.cs"
+"Assets/Scripts/Turret/TurretControl.cs"
 "Assets/Scripts/UI/UIManager.cs"
 "Assets/Scripts/Weapons/Bullet.cs"
 "Assets/Scripts/Weapons/Grenade.cs"

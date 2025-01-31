@@ -154,6 +154,7 @@ public class WeaponController : MonoBehaviour
     private void Shoot()
     {
         RaycastHit hit;
+
         if (Physics.Raycast(bulletSpawn.transform.position, bulletSpawn.transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name);
