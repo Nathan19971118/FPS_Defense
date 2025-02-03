@@ -85,6 +85,7 @@ public class Enemy : MonoBehaviour
         {
             mat.color= Color.red;
             anim.SetTrigger("doDie");
+            isDead = true;
             isChase = false;
             nav.enabled = false;
             Destroy(gameObject, 4);
