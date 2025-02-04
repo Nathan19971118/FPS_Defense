@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    public enum Type { A, B, C, D }
+    public enum Type { A, B, C }
     public Type enemyType;
 
     public int maxHealth;
@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour
     Material mat;
     NavMeshAgent nav;
     Animator anim;
+    WeaponController weaponController;
+    TurretControl turret;
 
     public bool isChase;
     public bool isDead;
@@ -88,6 +90,7 @@ public class Enemy : MonoBehaviour
             isDead = true;
             isChase = false;
             nav.enabled = false;
+            //boxCollider.enabled = false;
             Destroy(gameObject, 4);
         }
     }
@@ -101,7 +104,7 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Target")
+        if (collision.gameObject.tag == "Target")
         {
             Destroy(gameObject);
         }

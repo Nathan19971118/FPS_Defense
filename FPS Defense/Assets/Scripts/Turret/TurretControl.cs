@@ -6,7 +6,7 @@ public class TurretControl : MonoBehaviour
 {
     private Transform enemy;
     private float dist;
-    public int damage;
+    public int turretDamage;
     public float fireDist;
     public float bulletVelocity;
     public float fireRate, nextFire;
@@ -36,7 +36,8 @@ public class TurretControl : MonoBehaviour
                 if (Time.time >= nextFire)
                 {
                     nextFire = Time.time + 1f / fireRate;
-                    Shoot();
+                    Shoot(barrelLeft);
+                    Shoot(barrelRight);
                 }
             }
         }
@@ -46,11 +47,11 @@ public class TurretControl : MonoBehaviour
         }
     }
 
-    void Shoot()
+    void Shoot(Transform barrel)
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(barrelLeft.transform.position, barrelLeft.transform.forward, out hit, dist))
+        if (Physics.Raycast(barrel.transform.position, barrel.transform.forward, out hit, fireDist))
         {
             Debug.Log(hit.transform.name);
 
@@ -58,52 +59,14 @@ public class TurretControl : MonoBehaviour
 
             if (enemy != null)
             {
-                enemy.TakeDamage(damage, false);
+                enemy.TakeDamage(turretDamage, false);
             }
         }
+        
+        GameObject bulletInstance = Instantiate(bullet, barrel.position, head.rotation);
+        Rigidbody bulletRigid = bulletInstance.GetComponent<Rigidbody>();
+        bulletRigid.velocity = head.forward * bulletVelocity;
 
-        if (Physics.Raycast(barrelRight.transform.position, barrelRight.transform.forward, out hit, dist))
-        {
-            Debug.Log(hit.transform.name);
-
-            Enemy enemy = hit.transform.GetComponent<Enemy>();
-
-            if (enemy != null)
-            {
-                enemy.TakeDamage(damage, false);
-            }
-        }
-
-        GameObject bulletLeft = Instantiate(bullet, barrelLeft.position, head.rotation);
-        GameObject bulletRight = Instantiate(bullet, barrelRight.position, head.rotation);
-
-        Rigidbody bulletRigidLeft = bulletLeft.GetComponent<Rigidbody>();
-        Rigidbody bulletRigidRight = bulletRight.GetComponent<Rigidbody>();
-
-        bulletRigidLeft.velocity = head.forward * bulletVelocity;
-        bulletRigidRight.velocity = head.forward * bulletVelocity;
+        Destroy(bulletInstance, 3f);
     }
-
-    /*
-    private void Shoot()
-    {
-        RaycastHit hit;
-
-        if (Physics.Raycast(bulletSpawn.transform.position, bulletSpawn.transform.forward, out hit, range))
-        {
-            Debug.Log(hit.transform.name);
-
-            Enemy enemy = hit.transform.GetComponent<Enemy>();
-
-            if (enemy != null)
-            {
-                enemy.TakeDamage(damage, true);
-            }
-        }
-
-        GameObject instantBullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
-        Rigidbody bulletRigid = instantBullet.GetComponent<Rigidbody>();
-        bulletRigid.velocity = bulletSpawn.forward * bulletVelocity;
-    }
-    */
 }

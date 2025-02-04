@@ -1387,6 +1387,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: turret_single
       objectReference: {fileID: 0}
+    - target: {fileID: 1991609177913320824, guid: bdd305e83299fc74fb9d96541573d086, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1749,6 +1753,10 @@ PrefabInstance:
     - target: {fileID: 8100628135222361420, guid: cbf5e7201b364a345a30f1d4d5ecf547, type: 3}
       propertyPath: m_Name
       value: Enemy A (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100628135222361420, guid: cbf5e7201b364a345a30f1d4d5ecf547, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2551,14 +2559,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8691dd3ccbf81664ea1200d0dc7e2ee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
-  fireDist: 20
+  turretDamage: 10
+  fireDist: 25
   bulletVelocity: 500
   fireRate: 5
   nextFire: 0
   head: {fileID: 788062259}
-  barrelLeft: {fileID: 2073609932}
-  barrelRight: {fileID: 732763548}
+  barrelLeft: {fileID: 824648146}
+  barrelRight: {fileID: 593803409}
   bullet: {fileID: 6312961565117805062, guid: e020053fc83f4904cba3050fc28468a2, type: 3}
 --- !u!1 &1377919680
 GameObject:
@@ -3033,6 +3041,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy A (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8100628135222361420, guid: cbf5e7201b364a345a30f1d4d5ecf547, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3093,6 +3105,10 @@ PrefabInstance:
     - target: {fileID: 8100628135222361420, guid: cbf5e7201b364a345a30f1d4d5ecf547, type: 3}
       propertyPath: m_Name
       value: Enemy A (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100628135222361420, guid: cbf5e7201b364a345a30f1d4d5ecf547, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3871,6 +3887,10 @@ PrefabInstance:
     - target: {fileID: 8100628135222361420, guid: cbf5e7201b364a345a30f1d4d5ecf547, type: 3}
       propertyPath: m_Name
       value: Enemy A
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100628135222361420, guid: cbf5e7201b364a345a30f1d4d5ecf547, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5065,6 +5085,10 @@ PrefabInstance:
     - target: {fileID: 1360319523489636166, guid: 5c0e6a60437f81b438bbd26a57c035a0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2205034341936605232, guid: 5c0e6a60437f81b438bbd26a57c035a0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2694499033523038766, guid: 5c0e6a60437f81b438bbd26a57c035a0, type: 3}
       propertyPath: m_Name

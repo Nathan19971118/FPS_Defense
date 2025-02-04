@@ -166,7 +166,7 @@ public class WeaponController : MonoBehaviour
                 enemy.TakeDamage(damage, true);
             }
         }
-
+        
         GameObject instantBullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
         Rigidbody bulletRigid = instantBullet.GetComponent<Rigidbody>();
         bulletRigid.velocity = bulletSpawn.forward * bulletVelocity;

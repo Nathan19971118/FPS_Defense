@@ -49,8 +49,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyType: 2
-  maxHealth: 500
-  currentHealth: 500
+  maxHealth: 200
+  currentHealth: 200
   point: 500
   target: {fileID: 0}
   isChase: 0
