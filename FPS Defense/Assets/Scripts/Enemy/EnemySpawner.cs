@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public enum SpawnState { SPAWNING, WAITING, COUNTING};
+    public enum SpawnState { SPAWNING, WAITING, COUNTING };
 
     [System.Serializable]
     public class Wave

@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    public RawImage crosshair;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +17,10 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void IsAiming()
+    {
+        crosshair.enabled = false;
     }
 }

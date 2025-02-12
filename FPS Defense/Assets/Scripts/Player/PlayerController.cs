@@ -388,23 +388,26 @@ public class PlayerController : MonoBehaviour
 
     private void Crouch()
     {
-        if (playerStance == PlayerStance.Crouch)
+        if (!currentWeapon.isShooting)
         {
-            if (StanceCheck(playerStandStance.stanceCollider.height))
+            if (playerStance == PlayerStance.Crouch)
+            {
+                if (StanceCheck(playerStandStance.stanceCollider.height))
+                {
+                    return;
+                }
+
+                playerStance = PlayerStance.Stand;
+                return;
+            }
+
+            if (StanceCheck(playerCrouchStance.stanceCollider.height))
             {
                 return;
             }
 
-            playerStance = PlayerStance.Stand;
-            return;
+            playerStance = PlayerStance.Crouch;
         }
-
-        if (StanceCheck(playerCrouchStance.stanceCollider.height))
-        {
-            return;
-        }
-
-        playerStance = PlayerStance.Crouch;
     }
 
     /*
